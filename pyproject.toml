@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "andopt"
+version = "0.1.0"
+description = "ADB 기반 안드로이드 기기 진단 및 최적화 CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+andopt = "andopt.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["andopt*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
