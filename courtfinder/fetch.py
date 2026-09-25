@@ -100,3 +100,24 @@ def fetch_all(delay: float = 1.0, max_pages: int | None = None,
         print(f"  {len(services)}건 전부 수집했습니다.")
 
     return services
+
+
+DETAIL = "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do"
+
+
+def fetch_detail(svc_id: str, timeout: int = 30, retries: int = 4) -> str:
+    """서비스 상세 페이지를 가져온다. 접수 '시각'은 여기에만 있다."""
+    query = f"{DETAIL}?rsv_svc_id={svc_id}"
+    request = urllib.request.Request(query, headers={"User-Agent": USER_AGENT})
+    last: Exception | None = None
+
+    for attempt in range(retries):
+        if attempt:
+            time.sleep(2 ** attempt)
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return response.read().decode("utf-8", errors="replace")
+        except (urllib.error.URLError, OSError) as exc:
+            last = exc
+
+    raise FetchError(f"{svc_id} 상세를 {retries}회 시도했으나 실패했습니다: {last}")

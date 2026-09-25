@@ -204,3 +204,41 @@ def parse_page(page_html: str) -> list[Service]:
         if service:
             services.append(service)
     return services
+
+
+# ── 상세 페이지 ──────────────────────────────────────────────
+# 목록에는 접수기간이 날짜까지만 나오지만, 상세 페이지에는 시각이 함께 있다.
+#   접수기간 2026.09.25 07:00 ~ 2026.10.31 21:00
+_RCPT_AT_RE = re.compile(
+    r"접수기간\s*"
+    r"(\d{4})\.(\d{2})\.(\d{2})\s+(\d{1,2}):(\d{2})\s*~\s*"
+    r"(\d{4})\.(\d{2})\.(\d{2})\s+(\d{1,2}):(\d{2})"
+)
+_QUOTA_RE = re.compile(r"모집정원\s*(\d+)\s*(\S+)")
+_PICK_RE = re.compile(r"선정방법\s*(\S+)")
+
+
+def parse_detail(detail_html: str) -> dict:
+    """상세 페이지에서 접수 시작/종료 시각을 뽑는다.
+
+    반환 키: rcpt_open_at, rcpt_close_at (ISO 'YYYY-MM-DDTHH:MM'), quota, pick.
+    못 찾은 값은 빈 문자열.
+    """
+    flat = _text(detail_html)
+    result = {"rcpt_open_at": "", "rcpt_close_at": "", "quota": "", "pick": ""}
+
+    match = _RCPT_AT_RE.search(flat)
+    if match:
+        g = match.groups()
+        result["rcpt_open_at"] = f"{g[0]}-{g[1]}-{g[2]}T{int(g[3]):02d}:{g[4]}"
+        result["rcpt_close_at"] = f"{g[5]}-{g[6]}-{g[7]}T{int(g[8]):02d}:{g[9]}"
+
+    quota = _QUOTA_RE.search(flat)
+    if quota:
+        result["quota"] = f"{quota.group(1)} {quota.group(2)}"
+
+    pick = _PICK_RE.search(flat)
+    if pick:
+        result["pick"] = pick.group(1)
+
+    return result

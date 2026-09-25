@@ -161,3 +161,123 @@ def test_holidays_are_embedded_in_page():
     out = render.render([], dt.datetime(2026, 9, 25, 9, 0))
     assert "2026-09-25" in out
     assert "추석" in out
+
+
+# ── 개방 패턴 학습·예측 ────────────────────────────────────────
+def _rec(place, open_at, use_start, use_end, svc_id="S1"):
+    return {"svc_id": svc_id, "place": place, "area": "종로구", "title": place,
+            "status": "안내중", "rcpt_open_at": open_at, "rcpt_close_at": "",
+            "use_start": use_start, "use_end": use_end}
+
+
+def test_observe_appends_only_new_services(tmp_path):
+    from courtfinder import history
+
+    path = tmp_path / "h.jsonl"
+    first = history.observe([_rec("삼청", "2026-09-25T07:00", "2026-10-01", "2026-10-31", "A")], path)
+    assert len(first) == 1
+
+    again = history.observe([_rec("삼청", "2026-09-25T07:00", "2026-10-01", "2026-10-31", "A")], path)
+    assert again == []
+
+    added = history.observe([_rec("장충", "2026-09-25T10:00", "2026-10-01", "2026-10-15", "B")], path)
+    assert len(added) == 1
+    assert len(history.load(path)) == 2
+
+
+def test_history_survives_a_corrupt_line(tmp_path):
+    from courtfinder import history
+
+    path = tmp_path / "h.jsonl"
+    path.write_text('{"svc_id": "A"}\nnot json\n{"svc_id": "B"}\n', encoding="utf-8")
+    assert [r["svc_id"] for r in history.load(path)] == ["A", "B"]
+
+
+def test_infer_pattern_reads_time_and_cadence():
+    from courtfinder import predict
+
+    records = [
+        _rec("신도림", "2026-08-25T07:00", "2026-09-01", "2026-09-30"),
+        _rec("신도림", "2026-09-25T07:00", "2026-10-01", "2026-10-31"),
+    ]
+    pattern = predict.infer_pattern(records)
+    assert pattern["open_time"] == "07:00"
+    assert pattern["open_day"] == 25
+    assert pattern["cadence"] == "monthly"
+    assert pattern["rounds"] == 2
+    assert pattern["confident"] is True
+
+
+def test_single_round_is_not_confident():
+    from courtfinder import predict
+
+    pattern = predict.infer_pattern([_rec("삼청", "2026-09-25T07:00", "2026-10-01", "2026-10-31")])
+    assert pattern["rounds"] == 1
+    assert pattern["confident"] is False
+
+
+def test_half_month_cadence_detected():
+    from courtfinder import predict
+
+    records = [
+        _rec("가좌", "2026-09-10T00:00", "2026-09-16", "2026-09-30"),
+        _rec("가좌", "2026-09-25T00:00", "2026-10-01", "2026-10-15"),
+    ]
+    assert predict.infer_pattern(records)["cadence"] == "half-monthly"
+
+
+def test_predict_next_adds_one_month():
+    import datetime as dtm
+
+    from courtfinder import predict
+
+    records = [
+        _rec("신도림", "2026-08-25T07:00", "2026-09-01", "2026-09-30"),
+        _rec("신도림", "2026-09-25T07:00", "2026-10-01", "2026-10-31"),
+    ]
+    pattern = predict.infer_pattern(records)
+    now = dtm.datetime(2026, 9, 26, 12, 0, tzinfo=predict.KST)
+    nxt = predict.predict_next(pattern, now)
+    assert nxt.strftime("%Y-%m-%d %H:%M") == "2026-10-25 07:00"
+
+
+def test_predict_next_returns_none_without_cadence():
+    import datetime as dtm
+
+    from courtfinder import predict
+
+    pattern = predict.infer_pattern([_rec("X", "2026-09-25T07:00", "2026-10-01", "2026-10-03")])
+    assert predict.predict_next(pattern, dtm.datetime(2026, 9, 26, tzinfo=predict.KST)) is None
+
+
+def test_upcoming_prefers_confirmed_over_predicted():
+    import datetime as dtm
+
+    from courtfinder import predict
+
+    records = [
+        _rec("삼청", "2026-08-20T06:00", "2026-09-01", "2026-09-30", "A"),
+        _rec("삼청", "2026-10-20T06:00", "2026-11-01", "2026-11-30", "B"),
+    ]
+    now = dtm.datetime(2026, 9, 25, 12, 0, tzinfo=predict.KST)
+    rows = predict.upcoming(records, now=now, horizon_days=45)
+    assert len(rows) == 1
+    assert rows[0]["kind"] == "confirmed"
+    assert rows[0]["opens_at"] == "2026-10-20T06:00"
+
+
+def test_alarm_time_is_ten_minutes_before():
+    from courtfinder import predict
+
+    assert predict.alarm_time("2026-10-20T06:00", 10).strftime("%H:%M") == "05:50"
+    assert predict.alarm_time("2026-10-20T00:05", 10).strftime("%Y-%m-%d %H:%M") == "2026-10-19 23:55"
+
+
+def test_alarm_message_flags_a_prediction():
+    from courtfinder import predict
+
+    entry = {"place": "신도림테니스장", "area": "구로구", "opens_at": "2026-10-25T07:00",
+             "kind": "predicted", "use_start": "2026-11-01", "use_end": "2026-11-30"}
+    text = predict.alarm_message(entry)
+    assert "신도림테니스장" in text and "07:00" in text and "추정" in text
+    assert "추정" not in predict.alarm_message(dict(entry, kind="confirmed"))

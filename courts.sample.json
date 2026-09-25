@@ -17,7 +17,11 @@
   "time_start": "17:00",
   "time_end": "19:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917110259954206"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917110259954206",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917110605884209",
@@ -37,7 +41,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917110605884209"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917110605884209",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924194413005496",
@@ -57,7 +65,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194413005496"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194413005496",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917130540344497",
@@ -77,7 +89,11 @@
   "time_start": "17:00",
   "time_end": "19:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917130540344497"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917130540344497",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924194016728745",
@@ -97,7 +113,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194016728745"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194016728745",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917130239817754",
@@ -117,7 +137,11 @@
   "time_start": "07:00",
   "time_end": "17:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917130239817754"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917130239817754",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917105647995617",
@@ -137,7 +161,11 @@
   "time_start": "07:00",
   "time_end": "17:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917105647995617"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917105647995617",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920103038582103",
@@ -157,7 +185,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920103038582103"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920103038582103",
+  "rcpt_open_at": "2026-09-25T10:30",
+  "rcpt_close_at": "2026-10-31T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924194640067614",
@@ -177,7 +209,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194640067614"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194640067614",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920104013295065",
@@ -197,7 +233,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920104013295065"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920104013295065",
+  "rcpt_open_at": "2026-09-25T10:30",
+  "rcpt_close_at": "2026-10-31T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920105054252701",
@@ -217,7 +257,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920105054252701"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920105054252701",
+  "rcpt_open_at": "2026-09-25T10:30",
+  "rcpt_close_at": "2026-10-31T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920103637492403",
@@ -237,7 +281,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920103637492403"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920103637492403",
+  "rcpt_open_at": "2026-09-25T10:30",
+  "rcpt_close_at": "2026-10-31T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920121520113681",
@@ -257,7 +305,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920121520113681"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920121520113681",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-31T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920142505980619",
@@ -277,7 +329,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920142505980619"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920142505980619",
+  "rcpt_open_at": "2026-09-25T10:30",
+  "rcpt_close_at": "2026-10-31T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260925084546536989",
@@ -297,7 +353,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260925084546536989"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260925084546536989",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-25T18:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260925083959243259",
@@ -317,7 +377,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260925083959243259"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260925083959243259",
+  "rcpt_open_at": "2026-09-25T12:00",
+  "rcpt_close_at": "2026-10-30T14:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260925084241435972",
@@ -337,7 +401,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260925084241435972"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260925084241435972",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-31T18:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260925083142582962",
@@ -357,7 +425,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260925083142582962"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260925083142582962",
+  "rcpt_open_at": "2026-09-25T12:00",
+  "rcpt_close_at": "2026-10-30T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921142640117947",
@@ -377,7 +449,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921142640117947"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921142640117947",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921143259115145",
@@ -397,7 +473,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921143259115145"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921143259115145",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924200648679643",
@@ -417,7 +497,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200648679643"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200648679643",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921143643478156",
@@ -437,7 +521,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921143643478156"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921143643478156",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924200406800848",
@@ -457,7 +545,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200406800848"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200406800848",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921143501142952",
@@ -477,7 +569,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921143501142952"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921143501142952",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910122719492911",
@@ -497,7 +593,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910122719492911"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910122719492911",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910123343850017",
@@ -517,7 +617,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910123343850017"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910123343850017",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924200130167542",
@@ -537,7 +641,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200130167542"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200130167542",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924195814302011",
@@ -557,7 +665,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924195814302011"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924195814302011",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924200017096757",
@@ -577,7 +689,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200017096757"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200017096757",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921143832906371",
@@ -597,7 +713,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921143832906371"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921143832906371",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917102150011798",
@@ -617,7 +737,11 @@
   "time_start": "17:00",
   "time_end": "19:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917102150011798"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917102150011798",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917095847100542",
@@ -637,7 +761,11 @@
   "time_start": "07:00",
   "time_end": "17:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917095847100542"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917095847100542",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917105016373107",
@@ -657,7 +785,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917105016373107"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917105016373107",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917104342076295",
@@ -677,7 +809,11 @@
   "time_start": "07:00",
   "time_end": "17:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917104342076295"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917104342076295",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917104704582990",
@@ -697,7 +833,11 @@
   "time_start": "17:00",
   "time_end": "19:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917104704582990"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917104704582990",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250712121207500006",
@@ -717,7 +857,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250712121207500006"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250712121207500006",
+  "rcpt_open_at": "2026-09-24T09:00",
+  "rcpt_close_at": "2026-09-30T23:59",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250608153823623749",
@@ -737,7 +881,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250608153823623749"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250608153823623749",
+  "rcpt_open_at": "2026-09-24T09:00",
+  "rcpt_close_at": "2026-09-30T23:59",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921185443204584",
@@ -757,7 +905,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921185443204584"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921185443204584",
+  "rcpt_open_at": "2026-09-23T09:30",
+  "rcpt_close_at": "2026-10-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251213202943513088",
@@ -777,7 +929,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251213202943513088"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251213202943513088",
+  "rcpt_open_at": "2026-09-22T20:00",
+  "rcpt_close_at": "2026-09-25T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251213203511671185",
@@ -797,7 +953,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251213203511671185"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251213203511671185",
+  "rcpt_open_at": "2026-09-22T20:00",
+  "rcpt_close_at": "2026-09-25T20:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260805061213633880",
@@ -817,7 +977,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260805061213633880"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260805061213633880",
+  "rcpt_open_at": "2026-09-20T06:00",
+  "rcpt_close_at": "2026-10-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260911100613350759",
@@ -837,7 +1001,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911100613350759"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911100613350759",
+  "rcpt_open_at": "2026-09-15T13:00",
+  "rcpt_close_at": "2026-10-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813144403654672",
@@ -857,7 +1025,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813144403654672"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813144403654672",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813145133514018",
@@ -877,7 +1049,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813145133514018"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813145133514018",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813155344620369",
@@ -897,7 +1073,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813155344620369"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813155344620369",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T09:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813152806795130",
@@ -917,7 +1097,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813152806795130"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813152806795130",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813153729636892",
@@ -937,7 +1121,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153729636892"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153729636892",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813150142451575",
@@ -957,7 +1145,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813150142451575"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813150142451575",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260911092705042045",
@@ -977,7 +1169,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911092705042045"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911092705042045",
+  "rcpt_open_at": "2026-09-15T13:00",
+  "rcpt_close_at": "2026-10-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260911094615300333",
@@ -997,7 +1193,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911094615300333"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911094615300333",
+  "rcpt_open_at": "2026-09-15T13:00",
+  "rcpt_close_at": "2026-10-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909155321232275",
@@ -1017,7 +1217,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155321232275"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155321232275",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909154250546179",
@@ -1037,7 +1241,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154250546179"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154250546179",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907153928477184",
@@ -1057,7 +1265,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907153928477184"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907153928477184",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909154658618646",
@@ -1077,7 +1289,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154658618646"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154658618646",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909153246770671",
@@ -1097,7 +1313,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909153246770671"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909153246770671",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824181656887872",
@@ -1117,7 +1337,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824181656887872"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824181656887872",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260825071007288229",
@@ -1137,7 +1361,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825071007288229"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825071007288229",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260825071254901232",
@@ -1157,7 +1385,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825071254901232"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825071254901232",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824181222727215",
@@ -1177,7 +1409,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824181222727215"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824181222727215",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260825070349277963",
@@ -1197,7 +1433,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825070349277963"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825070349277963",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824180649338558",
@@ -1217,7 +1457,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824180649338558"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824180649338558",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824180947671433",
@@ -1237,7 +1481,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824180947671433"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824180947671433",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830102052073827",
@@ -1257,7 +1505,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102052073827"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102052073827",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830101711617584",
@@ -1277,7 +1529,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830101711617584"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830101711617584",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830101901691490",
@@ -1297,7 +1553,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830101901691490"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830101901691490",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830101514781996",
@@ -1317,7 +1577,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830101514781996"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830101514781996",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829025042658615",
@@ -1337,7 +1601,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025042658615"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025042658615",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829025330628056",
@@ -1357,7 +1625,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025330628056"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025330628056",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830101216069243",
@@ -1377,7 +1649,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830101216069243"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830101216069243",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829025719124899",
@@ -1397,7 +1673,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025719124899"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025719124899",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829025929282373",
@@ -1417,7 +1697,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025929282373"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025929282373",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829025518408469",
@@ -1437,7 +1721,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025518408469"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829025518408469",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830090953228317",
@@ -1457,7 +1745,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830090953228317"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830090953228317",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830091433996991",
@@ -1477,7 +1769,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830091433996991"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830091433996991",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824215525190375",
@@ -1497,7 +1793,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824215525190375"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824215525190375",
+  "rcpt_open_at": "2026-08-25T09:30",
+  "rcpt_close_at": "2026-09-30T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260822073352082185",
@@ -1517,7 +1817,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822073352082185"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822073352082185",
+  "rcpt_open_at": "2026-08-25T10:30",
+  "rcpt_close_at": "2026-09-30T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824214307755296",
@@ -1537,7 +1841,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824214307755296"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824214307755296",
+  "rcpt_open_at": "2026-08-25T09:30",
+  "rcpt_close_at": "2026-09-30T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260811102050287065",
@@ -1557,7 +1865,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811102050287065"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811102050287065",
+  "rcpt_open_at": "2026-08-18T13:00",
+  "rcpt_close_at": "2026-09-30T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260811103457709350",
@@ -1577,7 +1889,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811103457709350"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811103457709350",
+  "rcpt_open_at": "2026-08-18T13:00",
+  "rcpt_close_at": "2026-09-30T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210151352980059",
@@ -1597,7 +1913,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210151352980059"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210151352980059",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210164330679226",
@@ -1617,7 +1937,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210164330679226"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210164330679226",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210165740292529",
@@ -1637,7 +1961,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210165740292529"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210165740292529",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210142256402044",
@@ -1657,7 +1985,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210142256402044"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210142256402044",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210154416905678",
@@ -1677,7 +2009,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210154416905678"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210154416905678",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210153906514329",
@@ -1697,7 +2033,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210153906514329"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210153906514329",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210152811628713",
@@ -1717,7 +2057,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210152811628713"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210152811628713",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210171627633917",
@@ -1737,7 +2081,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210171627633917"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210171627633917",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210170950603753",
@@ -1757,7 +2105,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210170950603753"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210170950603753",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210171312214396",
@@ -1777,7 +2129,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210171312214396"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210171312214396",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S241227153756219266",
@@ -1797,7 +2153,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241227153756219266"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241227153756219266",
+  "rcpt_open_at": "2026-01-12T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S241231211524585150",
@@ -1817,7 +2177,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231211524585150"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231211524585150",
+  "rcpt_open_at": "2026-01-12T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S241231205401190096",
@@ -1837,7 +2201,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231205401190096"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231205401190096",
+  "rcpt_open_at": "2026-01-12T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S241231105012761501",
@@ -1857,7 +2225,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231105012761501"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231105012761501",
+  "rcpt_open_at": "2026-01-12T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260116101639588541",
@@ -1877,7 +2249,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260116101639588541"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260116101639588541",
+  "rcpt_open_at": "2026-01-01T00:00",
+  "rcpt_close_at": "2026-12-31T12:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S241231103622491414",
@@ -1897,7 +2273,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231103622491414"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231103622491414",
+  "rcpt_open_at": "2026-01-01T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S241231203900656570",
@@ -1917,7 +2297,11 @@
   "time_start": "06:00",
   "time_end": "08:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231203900656570"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231203900656570",
+  "rcpt_open_at": "2026-01-01T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251203110553292777",
@@ -1937,7 +2321,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251203110553292777"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251203110553292777",
+  "rcpt_open_at": "2025-12-03T00:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "4 ~",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251121103012746640",
@@ -1957,7 +2345,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251121103012746640"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251121103012746640",
+  "rcpt_open_at": "2025-12-02T09:00",
+  "rcpt_close_at": "2026-12-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251121100349891778",
@@ -1977,7 +2369,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251121100349891778"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251121100349891778",
+  "rcpt_open_at": "2025-12-02T09:00",
+  "rcpt_close_at": "2026-12-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251121103347587479",
@@ -1997,7 +2393,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251121103347587479"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251121103347587479",
+  "rcpt_open_at": "2025-12-02T09:00",
+  "rcpt_close_at": "2026-12-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251203104822013240",
@@ -2017,7 +2417,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251203104822013240"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251203104822013240",
+  "rcpt_open_at": "2025-12-02T00:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "4 ~",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251125145129110357",
@@ -2037,7 +2441,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251125145129110357"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251125145129110357",
+  "rcpt_open_at": "2025-11-26T00:01",
+  "rcpt_close_at": "2026-12-31T00:02",
+  "quota": "1 팀",
+  "pick": "추첨"
  },
  {
   "svc_id": "S251125143910223242",
@@ -2057,7 +2465,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251125143910223242"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251125143910223242",
+  "rcpt_open_at": "2025-11-26T00:01",
+  "rcpt_close_at": "2026-12-31T00:02",
+  "quota": "1 팀",
+  "pick": "추첨"
  },
  {
   "svc_id": "S250210155727408893",
@@ -2077,7 +2489,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250210155727408893"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250210155727408893",
+  "rcpt_open_at": "2025-02-01T00:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "추첨"
  },
  {
   "svc_id": "S250114090501006336",
@@ -2097,7 +2513,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250114090501006336"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250114090501006336",
+  "rcpt_open_at": "2025-01-01T00:01",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "추첨"
  },
  {
   "svc_id": "S210224095950585838",
@@ -2117,7 +2537,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210224095950585838"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210224095950585838",
+  "rcpt_open_at": "2021-04-14T06:00",
+  "rcpt_close_at": "2029-12-31T20:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219091826906010",
@@ -2137,7 +2561,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219091826906010"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219091826906010",
+  "rcpt_open_at": "2021-04-14T06:00",
+  "rcpt_close_at": "2029-12-30T20:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219092115226884",
@@ -2157,7 +2585,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092115226884"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092115226884",
+  "rcpt_open_at": "2021-04-14T06:00",
+  "rcpt_close_at": "2029-12-31T20:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210218174815551697",
@@ -2177,7 +2609,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210218174815551697"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210218174815551697",
+  "rcpt_open_at": "2021-04-13T06:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219091235657961",
@@ -2197,7 +2633,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219091235657961"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219091235657961",
+  "rcpt_open_at": "2021-04-13T06:00",
+  "rcpt_close_at": "2026-12-31T16:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210224094844227739",
@@ -2217,7 +2657,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210224094844227739"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210224094844227739",
+  "rcpt_open_at": "2021-04-10T06:00",
+  "rcpt_close_at": "2030-12-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219091554014528",
@@ -2237,7 +2681,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219091554014528"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219091554014528",
+  "rcpt_open_at": "2021-04-10T06:00",
+  "rcpt_close_at": "2030-12-31T16:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219085555417413",
@@ -2257,7 +2705,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219085555417413"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219085555417413",
+  "rcpt_open_at": "2021-04-10T06:00",
+  "rcpt_close_at": "2030-12-31T20:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219092004901944",
@@ -2277,7 +2729,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092004901944"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092004901944",
+  "rcpt_open_at": "2021-04-02T06:00",
+  "rcpt_close_at": "2030-12-31T16:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921132617967818",
@@ -2297,7 +2753,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921132617967818"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921132617967818",
+  "rcpt_open_at": "2026-10-20T06:00",
+  "rcpt_close_at": "2026-11-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921131833945971",
@@ -2317,7 +2777,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921131833945971"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921131833945971",
+  "rcpt_open_at": "2026-10-20T06:00",
+  "rcpt_close_at": "2026-11-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921132917979091",
@@ -2337,7 +2801,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921132917979091"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921132917979091",
+  "rcpt_open_at": "2026-10-20T06:00",
+  "rcpt_close_at": "2026-11-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S220420111459351786",
@@ -2357,7 +2825,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S220420111459351786"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S220420111459351786",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "심사"
  },
  {
   "svc_id": "S220420104434156882",
@@ -2377,7 +2849,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S220420104434156882"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S220420104434156882",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "심사"
  },
  {
   "svc_id": "S250509123306071137",
@@ -2397,7 +2873,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250509123306071137"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250509123306071137",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250514102531399124",
@@ -2417,7 +2897,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250514102531399124"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250514102531399124",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250518140616213129",
@@ -2437,7 +2921,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250518140616213129"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250518140616213129",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "심사"
  },
  {
   "svc_id": "S210216131232290211",
@@ -2457,7 +2945,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210216131232290211"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210216131232290211",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210205141719898815",
@@ -2477,7 +2969,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210205141719898815"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210205141719898815",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T22:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210216130920543807",
@@ -2497,7 +2993,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210216130920543807"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210216130920543807",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T22:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250518141237845963",
@@ -2517,7 +3017,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250518141237845963"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250518141237845963",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "심사"
  },
  {
   "svc_id": "S250514102016722793",
@@ -2537,7 +3041,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250514102016722793"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250514102016722793",
+  "rcpt_open_at": "2026-09-25T14:00",
+  "rcpt_close_at": "2026-12-31T23:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260810091528269073",
@@ -2557,7 +3065,11 @@
   "time_start": "07:00",
   "time_end": "19:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260810091528269073"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260810091528269073",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-30T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260810092052033761",
@@ -2577,7 +3089,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260810092052033761"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260810092052033761",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-30T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251114163247532687",
@@ -2597,7 +3113,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251114163247532687"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251114163247532687",
+  "rcpt_open_at": "2025-12-01T12:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251114154032771814",
@@ -2617,7 +3137,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251114154032771814"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251114154032771814",
+  "rcpt_open_at": "2025-12-01T12:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251114155211838401",
@@ -2637,7 +3161,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251114155211838401"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251114155211838401",
+  "rcpt_open_at": "2025-12-01T12:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251013184642790062",
@@ -2657,7 +3185,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251013184642790062"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251013184642790062",
+  "rcpt_open_at": "2025-12-01T12:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924200527432016",
@@ -2677,7 +3209,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200527432016"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924200527432016",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921144617182970",
@@ -2697,7 +3233,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921144617182970"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921144617182970",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921144915662041",
@@ -2717,7 +3257,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921144915662041"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921144915662041",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920121256507396",
@@ -2737,7 +3281,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920121256507396"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920121256507396",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-31T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920142203892162",
@@ -2757,7 +3305,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920142203892162"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920142203892162",
+  "rcpt_open_at": "2026-09-25T10:30",
+  "rcpt_close_at": "2026-10-31T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920120114137678",
@@ -2777,7 +3329,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920120114137678"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920120114137678",
+  "rcpt_open_at": "2026-09-25T10:30",
+  "rcpt_close_at": "2026-10-31T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920120516735376",
@@ -2797,7 +3353,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920120516735376"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920120516735376",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-31T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924194942209905",
@@ -2817,7 +3377,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194942209905"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194942209905",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920121000589876",
@@ -2837,7 +3401,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920121000589876"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920121000589876",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-31T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924194808665056",
@@ -2857,7 +3425,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194808665056"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194808665056",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260920120759546026",
@@ -2877,7 +3449,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920120759546026"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260920120759546026",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-31T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910124920894814",
@@ -2897,7 +3473,11 @@
   "time_start": "06:00",
   "time_end": "08:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910124920894814"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910124920894814",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910125339094125",
@@ -2917,7 +3497,11 @@
   "time_start": "06:00",
   "time_end": "08:00",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910125339094125"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910125339094125",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260924194252448551",
@@ -2937,7 +3521,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194252448551"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260924194252448551",
+  "rcpt_open_at": "2026-09-25T00:00",
+  "rcpt_close_at": "2026-10-15T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917102712820880",
@@ -2957,7 +3545,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917102712820880"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917102712820880",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260917131145605157",
@@ -2977,7 +3569,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917131145605157"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260917131145605157",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-31T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910125532237003",
@@ -2997,7 +3593,11 @@
   "time_start": "18:00",
   "time_end": "22:00",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910125532237003"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910125532237003",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910123024197077",
@@ -3017,7 +3617,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910123024197077"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910123024197077",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910123536401273",
@@ -3037,7 +3641,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910123536401273"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910123536401273",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921145749482078",
@@ -3057,7 +3665,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921145749482078"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921145749482078",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910124042861168",
@@ -3077,7 +3689,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910124042861168"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910124042861168",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910124438475008",
@@ -3097,7 +3713,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910124438475008"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910124438475008",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260910123737218138",
@@ -3117,7 +3737,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910123737218138"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260910123737218138",
+  "rcpt_open_at": "2026-09-25T07:00",
+  "rcpt_close_at": "2026-10-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921145119081811",
@@ -3137,7 +3761,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921145119081811"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921145119081811",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921145614912946",
@@ -3157,7 +3785,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921145614912946"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921145614912946",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921145430646075",
@@ -3177,7 +3809,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921145430646075"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921145430646075",
+  "rcpt_open_at": "2026-09-25T10:00",
+  "rcpt_close_at": "2026-10-15T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250712121531482948",
@@ -3197,7 +3833,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250712121531482948"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250712121531482948",
+  "rcpt_open_at": "2026-09-24T09:00",
+  "rcpt_close_at": "2026-09-30T23:59",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250712120547598199",
@@ -3217,7 +3857,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250712120547598199"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250712120547598199",
+  "rcpt_open_at": "2026-09-24T09:00",
+  "rcpt_close_at": "2026-09-30T23:59",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921190825583369",
@@ -3237,7 +3881,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921190825583369"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921190825583369",
+  "rcpt_open_at": "2026-09-23T09:30",
+  "rcpt_close_at": "2026-10-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921190312310496",
@@ -3257,7 +3905,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921190312310496"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921190312310496",
+  "rcpt_open_at": "2026-09-23T09:30",
+  "rcpt_close_at": "2026-10-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921214904441013",
@@ -3277,7 +3929,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921214904441013"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921214904441013",
+  "rcpt_open_at": "2026-09-22T12:00",
+  "rcpt_close_at": "2026-09-27T12:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921215010068975",
@@ -3297,7 +3953,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921215010068975"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921215010068975",
+  "rcpt_open_at": "2026-09-22T12:00",
+  "rcpt_close_at": "2026-09-27T21:51",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260921215351205854",
@@ -3317,7 +3977,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921215351205854"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260921215351205854",
+  "rcpt_open_at": "2026-09-21T22:10",
+  "rcpt_close_at": "2026-09-26T22:11",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260805062502328320",
@@ -3337,7 +4001,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260805062502328320"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260805062502328320",
+  "rcpt_open_at": "2026-09-20T06:00",
+  "rcpt_close_at": "2026-10-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260805061837347338",
@@ -3357,7 +4025,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260805061837347338"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260805061837347338",
+  "rcpt_open_at": "2026-09-20T06:00",
+  "rcpt_close_at": "2026-10-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813143523487045",
@@ -3377,7 +4049,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813143523487045"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813143523487045",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813144033514252",
@@ -3397,7 +4073,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813144033514252"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813144033514252",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813155736050612",
@@ -3417,7 +4097,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813155736050612"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813155736050612",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T09:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813145738878825",
@@ -3437,7 +4121,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813145738878825"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813145738878825",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813151139655081",
@@ -3457,7 +4145,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813151139655081"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813151139655081",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813144820469548",
@@ -3477,7 +4169,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813144820469548"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813144820469548",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813151535797450",
@@ -3497,7 +4193,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813151535797450"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813151535797450",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813152246192756",
@@ -3517,7 +4217,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813152246192756"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813152246192756",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:58",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260911102043477353",
@@ -3537,7 +4241,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911102043477353"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911102043477353",
+  "rcpt_open_at": "2026-09-15T13:00",
+  "rcpt_close_at": "2026-10-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260911094022544211",
@@ -3557,7 +4265,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911094022544211"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911094022544211",
+  "rcpt_open_at": "2026-09-15T13:00",
+  "rcpt_close_at": "2026-10-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260911101641344630",
@@ -3577,7 +4289,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911101641344630"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260911101641344630",
+  "rcpt_open_at": "2026-09-15T13:00",
+  "rcpt_close_at": "2026-10-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813153920689107",
@@ -3597,7 +4313,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153920689107"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153920689107",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-30T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813154108755166",
@@ -3617,7 +4337,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154108755166"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154108755166",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T09:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813153402210060",
@@ -3637,7 +4361,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153402210060"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153402210060",
+  "rcpt_open_at": "2026-09-15T09:02",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813155033490531",
@@ -3657,7 +4385,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813155033490531"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813155033490531",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T09:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813154319623206",
@@ -3677,7 +4409,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154319623206"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154319623206",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T08:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813154554720684",
@@ -3697,7 +4433,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154554720684"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154554720684",
+  "rcpt_open_at": "2026-09-15T09:00",
+  "rcpt_close_at": "2026-09-29T09:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S230428115408736358",
@@ -3717,7 +4457,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S230428115408736358"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S230428115408736358",
+  "rcpt_open_at": "2026-09-12T00:00",
+  "rcpt_close_at": "2026-09-27T16:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S230425174848455942",
@@ -3737,7 +4481,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S230425174848455942"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S230425174848455942",
+  "rcpt_open_at": "2026-09-12T00:00",
+  "rcpt_close_at": "2026-09-27T16:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260908163218265991",
@@ -3757,7 +4505,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163218265991"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163218265991",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907184319315605",
@@ -3777,7 +4529,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907184319315605"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907184319315605",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260908162914166810",
@@ -3797,7 +4553,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908162914166810"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908162914166810",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907183927227581",
@@ -3817,7 +4577,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907183927227581"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907183927227581",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907184116346323",
@@ -3837,7 +4601,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907184116346323"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907184116346323",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260908163438316429",
@@ -3857,7 +4625,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163438316429"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163438316429",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260908163618777184",
@@ -3877,7 +4649,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163618777184"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163618777184",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909155605723593",
@@ -3897,7 +4673,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155605723593"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155605723593",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260908163950076572",
@@ -3917,7 +4697,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163950076572"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163950076572",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909155438080885",
@@ -3937,7 +4721,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155438080885"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155438080885",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260908163809940126",
@@ -3957,7 +4745,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163809940126"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260908163809940126",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909153758561163",
@@ -3977,7 +4769,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909153758561163"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909153758561163",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909153955082553",
@@ -3997,7 +4793,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909153955082553"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909153955082553",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909155005967786",
@@ -4017,7 +4817,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155005967786"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155005967786",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909154448499958",
@@ -4037,7 +4841,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154448499958"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154448499958",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909154827079940",
@@ -4057,7 +4865,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154827079940"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154827079940",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909154136614731",
@@ -4077,7 +4889,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154136614731"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909154136614731",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907154203272674",
@@ -4097,7 +4913,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907154203272674"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907154203272674",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907181950444678",
@@ -4117,7 +4937,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907181950444678"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907181950444678",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260909155122411647",
@@ -4137,7 +4961,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155122411647"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260909155122411647",
+  "rcpt_open_at": "2026-09-10T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907182501605403",
@@ -4157,7 +4985,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907182501605403"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907182501605403",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907183018575166",
@@ -4177,7 +5009,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907183018575166"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907183018575166",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907182321063093",
@@ -4197,7 +5033,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907182321063093"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907182321063093",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907183407955481",
@@ -4217,7 +5057,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907183407955481"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907183407955481",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260907183604708852",
@@ -4237,7 +5081,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907183604708852"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260907183604708852",
+  "rcpt_open_at": "2026-09-10T10:00",
+  "rcpt_close_at": "2026-09-30T22:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830102824414678",
@@ -4257,7 +5105,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102824414678"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102824414678",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830102438207732",
@@ -4277,7 +5129,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102438207732"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102438207732",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830102245739313",
@@ -4297,7 +5153,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102245739313"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102245739313",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830102636932424",
@@ -4317,7 +5177,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102636932424"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830102636932424",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830103006653543",
@@ -4337,7 +5201,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103006653543"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103006653543",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830103153984774",
@@ -4357,7 +5225,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103153984774"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103153984774",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830103823145167",
@@ -4377,7 +5249,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103823145167"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103823145167",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830103509443519",
@@ -4397,7 +5273,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103509443519"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103509443519",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830103646705073",
@@ -4417,7 +5297,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103646705073"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103646705073",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830103335669513",
@@ -4437,7 +5321,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103335669513"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830103335669513",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824164154085128",
@@ -4457,7 +5345,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824164154085128"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824164154085128",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824171025487822",
@@ -4477,7 +5369,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824171025487822"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824171025487822",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824172417077478",
@@ -4497,7 +5393,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824172417077478"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824172417077478",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824171805110596",
@@ -4517,7 +5417,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824171805110596"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824171805110596",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824172053661326",
@@ -4537,7 +5441,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824172053661326"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824172053661326",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824171432323977",
@@ -4557,7 +5465,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824171432323977"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824171432323977",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824182222527927",
@@ -4577,7 +5489,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824182222527927"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824182222527927",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824182505082094",
@@ -4597,7 +5513,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824182505082094"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824182505082094",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824183438518437",
@@ -4617,7 +5537,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183438518437"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183438518437",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824183005532131",
@@ -4637,7 +5561,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183005532131"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183005532131",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824183235678385",
@@ -4657,7 +5585,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183235678385"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183235678385",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824182737505194",
@@ -4677,7 +5609,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824182737505194"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824182737505194",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260820084500045993",
@@ -4697,7 +5633,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260820084500045993"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260820084500045993",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824183711296080",
@@ -4717,7 +5657,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183711296080"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183711296080",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260825071754777750",
@@ -4737,7 +5681,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825071754777750"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825071754777750",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260825065421967000",
@@ -4757,7 +5705,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825065421967000"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825065421967000",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260825065748401721",
@@ -4777,7 +5729,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825065748401721"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825065748401721",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824183934077782",
@@ -4797,7 +5753,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183934077782"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824183934077782",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260825072211130391",
@@ -4817,7 +5777,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825072211130391"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825072211130391",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260825074351758954",
@@ -4837,7 +5801,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825074351758954"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260825074351758954",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829024455283605",
@@ -4857,7 +5825,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829024455283605"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829024455283605",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829023903142907",
@@ -4877,7 +5849,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829023903142907"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829023903142907",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829024139309083",
@@ -4897,7 +5873,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829024139309083"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829024139309083",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829023445002399",
@@ -4917,7 +5897,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829023445002399"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829023445002399",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829024712487467",
@@ -4937,7 +5921,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829024712487467"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829024712487467",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829030255774986",
@@ -4957,7 +5945,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829030255774986"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829030255774986",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829031932495125",
@@ -4977,7 +5969,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829031932495125"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829031932495125",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829031533476695",
@@ -4997,7 +5993,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829031533476695"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829031533476695",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829031721137447",
@@ -5017,7 +6017,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829031721137447"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829031721137447",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260829030718727208",
@@ -5037,7 +6041,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829030718727208"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260829030718727208",
+  "rcpt_open_at": "2026-09-01T00:00",
+  "rcpt_close_at": "2026-09-30T00:01",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830085200276898",
@@ -5057,7 +6065,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830085200276898"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830085200276898",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830085910544380",
@@ -5077,7 +6089,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830085910544380"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830085910544380",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830091223574419",
@@ -5097,7 +6113,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830091223574419"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830091223574419",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830090450669893",
@@ -5117,7 +6137,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830090450669893"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830090450669893",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830090724160378",
@@ -5137,7 +6161,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830090724160378"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830090724160378",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830090134997387",
@@ -5157,7 +6185,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830090134997387"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830090134997387",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260830085627398899",
@@ -5177,7 +6209,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830085627398899"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260830085627398899",
+  "rcpt_open_at": "2026-08-31T20:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251222170328865396",
@@ -5197,7 +6233,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222170328865396"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222170328865396",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251222170809140220",
@@ -5217,7 +6257,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222170809140220"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222170809140220",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260820113956166690",
@@ -5237,7 +6281,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260820113956166690"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260820113956166690",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251222165836988933",
@@ -5257,7 +6305,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222165836988933"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222165836988933",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251222170525357408",
@@ -5277,7 +6329,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222170525357408"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222170525357408",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251219191019422002",
@@ -5297,7 +6353,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251219191019422002"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251219191019422002",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251222163418035568",
@@ -5317,7 +6377,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222163418035568"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222163418035568",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251222164920499343",
@@ -5337,7 +6401,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222164920499343"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222164920499343",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251222165235004651",
@@ -5357,7 +6425,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222165235004651"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251222165235004651",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260821084935067355",
@@ -5377,7 +6449,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260821084935067355"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260821084935067355",
+  "rcpt_open_at": "2026-08-26T10:00",
+  "rcpt_close_at": "2026-09-30T00:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260822072340160879",
@@ -5397,7 +6473,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822072340160879"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822072340160879",
+  "rcpt_open_at": "2026-08-25T10:30",
+  "rcpt_close_at": "2026-09-30T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260822074810134301",
@@ -5417,7 +6497,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822074810134301"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822074810134301",
+  "rcpt_open_at": "2026-08-25T10:30",
+  "rcpt_close_at": "2026-09-30T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260822080428937442",
@@ -5437,7 +6521,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822080428937442"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822080428937442",
+  "rcpt_open_at": "2026-08-25T10:30",
+  "rcpt_close_at": "2026-09-30T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260823160051762488",
@@ -5457,7 +6545,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260823160051762488"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260823160051762488",
+  "rcpt_open_at": "2026-08-25T10:00",
+  "rcpt_close_at": "2026-09-30T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260822220522284440",
@@ -5477,7 +6569,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822220522284440"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822220522284440",
+  "rcpt_open_at": "2026-08-25T10:00",
+  "rcpt_close_at": "2026-09-30T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260822220944371097",
@@ -5497,7 +6593,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822220944371097"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822220944371097",
+  "rcpt_open_at": "2026-08-25T10:00",
+  "rcpt_close_at": "2026-09-30T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260822080731855223",
@@ -5517,7 +6617,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822080731855223"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822080731855223",
+  "rcpt_open_at": "2026-08-25T10:30",
+  "rcpt_close_at": "2026-09-30T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260823160852767087",
@@ -5537,7 +6641,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260823160852767087"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260823160852767087",
+  "rcpt_open_at": "2026-08-25T10:00",
+  "rcpt_close_at": "2026-09-30T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260823161147772692",
@@ -5557,7 +6665,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260823161147772692"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260823161147772692",
+  "rcpt_open_at": "2026-08-25T10:00",
+  "rcpt_close_at": "2026-09-30T10:01",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824222530619811",
@@ -5577,7 +6689,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824222530619811"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824222530619811",
+  "rcpt_open_at": "2026-08-25T10:00",
+  "rcpt_close_at": "2026-09-27T18:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824220721788337",
@@ -5597,7 +6713,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824220721788337"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824220721788337",
+  "rcpt_open_at": "2026-08-25T12:00",
+  "rcpt_close_at": "2026-09-29T16:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824221711752059",
@@ -5617,7 +6737,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824221711752059"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824221711752059",
+  "rcpt_open_at": "2026-08-25T12:00",
+  "rcpt_close_at": "2026-09-28T14:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260824220044263280",
@@ -5637,7 +6761,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824220044263280"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260824220044263280",
+  "rcpt_open_at": "2026-08-25T09:30",
+  "rcpt_close_at": "2026-09-30T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260810092757290351",
@@ -5657,7 +6785,11 @@
   "time_start": "07:00",
   "time_end": "19:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260810092757290351"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260810092757290351",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-30T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260810093254750459",
@@ -5677,7 +6809,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260810093254750459"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260810093254750459",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-30T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813153526694557",
@@ -5697,7 +6833,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153526694557"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153526694557",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-29T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813153124756107",
@@ -5717,7 +6857,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153124756107"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153124756107",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-30T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813153258242345",
@@ -5737,7 +6881,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153258242345"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153258242345",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-29T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813152748143375",
@@ -5757,7 +6905,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813152748143375"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813152748143375",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-29T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813153939739464",
@@ -5777,7 +6929,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153939739464"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813153939739464",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-29T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813154146951738",
@@ -5797,7 +6953,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154146951738"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154146951738",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-29T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260826125012743403",
@@ -5817,7 +6977,11 @@
   "time_start": "07:00",
   "time_end": "19:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260826125012743403"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260826125012743403",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-30T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813154826867838",
@@ -5837,7 +7001,11 @@
   "time_start": "18:00",
   "time_end": "20:00",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154826867838"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154826867838",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-29T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813155029540300",
@@ -5857,7 +7025,11 @@
   "time_start": "06:00",
   "time_end": "18:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813155029540300"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813155029540300",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-29T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260813154513471357",
@@ -5877,7 +7049,11 @@
   "time_start": "06:00",
   "time_end": "18:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154513471357"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260813154513471357",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-29T23:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260822071510325576",
@@ -5897,7 +7073,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822071510325576"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260822071510325576",
+  "rcpt_open_at": "2026-08-25T10:30",
+  "rcpt_close_at": "2026-09-30T10:31",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260826125445880321",
@@ -5917,7 +7097,11 @@
   "time_start": "19:00",
   "time_end": "21:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260826125445880321"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260826125445880321",
+  "rcpt_open_at": "2026-08-25T07:00",
+  "rcpt_close_at": "2026-09-30T21:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260622122327707103",
@@ -5937,7 +7121,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622122327707103"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622122327707103",
+  "rcpt_open_at": "2026-08-20T06:00",
+  "rcpt_close_at": "2026-09-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260622121308006249",
@@ -5957,7 +7145,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622121308006249"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622121308006249",
+  "rcpt_open_at": "2026-08-20T06:00",
+  "rcpt_close_at": "2026-09-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260622122843571602",
@@ -5977,7 +7169,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622122843571602"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622122843571602",
+  "rcpt_open_at": "2026-08-20T06:00",
+  "rcpt_close_at": "2026-09-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260811102538674604",
@@ -5997,7 +7193,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811102538674604"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811102538674604",
+  "rcpt_open_at": "2026-08-18T13:00",
+  "rcpt_close_at": "2026-09-30T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260811103814415191",
@@ -6017,7 +7217,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811103814415191"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811103814415191",
+  "rcpt_open_at": "2026-08-18T13:00",
+  "rcpt_close_at": "2026-09-30T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260811103048605854",
@@ -6037,7 +7241,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811103048605854"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811103048605854",
+  "rcpt_open_at": "2026-08-18T13:00",
+  "rcpt_close_at": "2026-09-30T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260811104148406522",
@@ -6057,7 +7265,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811104148406522"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260811104148406522",
+  "rcpt_open_at": "2026-08-18T13:00",
+  "rcpt_close_at": "2026-09-30T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260601121854199858",
@@ -6077,7 +7289,11 @@
   "time_start": "18:00",
   "time_end": "22:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260601121854199858"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260601121854199858",
+  "rcpt_open_at": "2026-06-01T00:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260601120311776241",
@@ -6097,7 +7313,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260601120311776241"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260601120311776241",
+  "rcpt_open_at": "2026-06-01T00:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260601122541385895",
@@ -6117,7 +7337,11 @@
   "time_start": "18:00",
   "time_end": "22:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260601122541385895"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260601122541385895",
+  "rcpt_open_at": "2026-06-01T00:00",
+  "rcpt_close_at": "2026-12-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210161904749874",
@@ -6137,7 +7361,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210161904749874"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210161904749874",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210155234940589",
@@ -6157,7 +7385,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210155234940589"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210155234940589",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210163638709253",
@@ -6177,7 +7409,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210163638709253"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210163638709253",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210162318945975",
@@ -6197,7 +7433,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210162318945975"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210162318945975",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251210163136276287",
@@ -6217,7 +7457,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210163136276287"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251210163136276287",
+  "rcpt_open_at": "2026-05-15T00:00",
+  "rcpt_close_at": "2026-12-31T23:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250119185246674536",
@@ -6237,7 +7481,11 @@
   "time_start": "18:00",
   "time_end": "22:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250119185246674536"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250119185246674536",
+  "rcpt_open_at": "2026-01-06T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S241231210443498997",
@@ -6257,7 +7505,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231210443498997"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231210443498997",
+  "rcpt_open_at": "2026-01-06T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250119184517021118",
@@ -6277,7 +7529,11 @@
   "time_start": "10:00",
   "time_end": "18:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250119184517021118"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250119184517021118",
+  "rcpt_open_at": "2026-01-06T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250615171501341316",
@@ -6297,7 +7553,11 @@
   "time_start": "08:00",
   "time_end": "18:00",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250615171501341316"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250615171501341316",
+  "rcpt_open_at": "2026-01-01T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251121102355938084",
@@ -6317,7 +7577,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251121102355938084"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251121102355938084",
+  "rcpt_open_at": "2025-12-02T09:00",
+  "rcpt_close_at": "2026-12-31T17:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219092313243896",
@@ -6337,7 +7601,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092313243896"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092313243896",
+  "rcpt_open_at": "2021-04-14T06:00",
+  "rcpt_close_at": "2030-12-31T20:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219092625909779",
@@ -6357,7 +7625,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092625909779"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092625909779",
+  "rcpt_open_at": "2021-04-14T06:00",
+  "rcpt_close_at": "2030-12-31T20:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S210219092430823699",
@@ -6377,7 +7649,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092430823699"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S210219092430823699",
+  "rcpt_open_at": "2021-04-10T06:00",
+  "rcpt_close_at": "2030-12-31T16:59",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S190502160848522070",
@@ -6397,7 +7673,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S190502160848522070"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S190502160848522070",
+  "rcpt_open_at": "2026-09-15T10:00",
+  "rcpt_close_at": "2026-09-19T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S190502151751379566",
@@ -6417,7 +7697,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S190502151751379566"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S190502151751379566",
+  "rcpt_open_at": "2026-09-15T10:00",
+  "rcpt_close_at": "2026-09-19T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260725195246895849",
@@ -6437,7 +7721,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260725195246895849"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260725195246895849",
+  "rcpt_open_at": "2026-07-27T09:30",
+  "rcpt_close_at": "2026-08-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260725193911853938",
@@ -6457,7 +7745,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260725193911853938"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260725193911853938",
+  "rcpt_open_at": "2026-07-27T09:30",
+  "rcpt_close_at": "2026-08-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260725195817550347",
@@ -6477,7 +7769,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260725195817550347"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260725195817550347",
+  "rcpt_open_at": "2026-07-27T09:30",
+  "rcpt_close_at": "2026-08-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260506070510483848",
@@ -6497,7 +7793,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260506070510483848"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260506070510483848",
+  "rcpt_open_at": "2026-07-20T06:00",
+  "rcpt_close_at": "2026-08-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260506071048952264",
@@ -6517,7 +7817,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260506071048952264"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260506071048952264",
+  "rcpt_open_at": "2026-07-20T06:00",
+  "rcpt_close_at": "2026-08-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260506071516196197",
@@ -6537,7 +7841,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260506071516196197"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260506071516196197",
+  "rcpt_open_at": "2026-07-20T06:00",
+  "rcpt_close_at": "2026-08-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260622095724285258",
@@ -6557,7 +7865,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622095724285258"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622095724285258",
+  "rcpt_open_at": "2026-06-25T09:30",
+  "rcpt_close_at": "2026-07-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260622181344976980",
@@ -6577,7 +7889,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622181344976980"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622181344976980",
+  "rcpt_open_at": "2026-06-25T09:30",
+  "rcpt_close_at": "2026-07-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260622182602317465",
@@ -6597,7 +7913,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622182602317465"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260622182602317465",
+  "rcpt_open_at": "2026-06-25T09:30",
+  "rcpt_close_at": "2026-07-31T18:00",
+  "quota": "1 면",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260405071657965230",
@@ -6617,7 +7937,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260405071657965230"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260405071657965230",
+  "rcpt_open_at": "2026-06-20T06:00",
+  "rcpt_close_at": "2026-07-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260405070732229411",
@@ -6637,7 +7961,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260405070732229411"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260405070732229411",
+  "rcpt_open_at": "2026-06-20T06:00",
+  "rcpt_close_at": "2026-07-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260405072333792052",
@@ -6657,7 +7985,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260405072333792052"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260405072333792052",
+  "rcpt_open_at": "2026-06-20T06:00",
+  "rcpt_close_at": "2026-07-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260312150717286397",
@@ -6677,7 +8009,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260312150717286397"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260312150717286397",
+  "rcpt_open_at": "2026-05-20T06:00",
+  "rcpt_close_at": "2026-06-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260312150146898952",
@@ -6697,7 +8033,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260312150146898952"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260312150146898952",
+  "rcpt_open_at": "2026-05-20T06:00",
+  "rcpt_close_at": "2026-06-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260312151258082506",
@@ -6717,7 +8057,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260312151258082506"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260312151258082506",
+  "rcpt_open_at": "2026-05-20T06:00",
+  "rcpt_close_at": "2026-06-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260303120842112080",
@@ -6737,7 +8081,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260303120842112080"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260303120842112080",
+  "rcpt_open_at": "2026-04-20T06:00",
+  "rcpt_close_at": "2026-05-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260303115229950136",
@@ -6757,7 +8105,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260303115229950136"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260303115229950136",
+  "rcpt_open_at": "2026-04-20T06:00",
+  "rcpt_close_at": "2026-05-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260303121621983772",
@@ -6777,7 +8129,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260303121621983772"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260303121621983772",
+  "rcpt_open_at": "2026-04-20T06:00",
+  "rcpt_close_at": "2026-05-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250520183134993782",
@@ -6797,7 +8153,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250520183134993782"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250520183134993782",
+  "rcpt_open_at": "2026-04-02T15:10",
+  "rcpt_close_at": "2026-04-09T20:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250520182539872577",
@@ -6817,7 +8177,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250520182539872577"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250520182539872577",
+  "rcpt_open_at": "2026-04-02T15:00",
+  "rcpt_close_at": "2026-04-09T20:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S250520183447979079",
@@ -6837,7 +8201,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250520183447979079"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S250520183447979079",
+  "rcpt_open_at": "2026-04-02T15:00",
+  "rcpt_close_at": "2026-04-11T20:00",
+  "quota": "1 명",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260114161017979118",
@@ -6857,7 +8225,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260114161017979118"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260114161017979118",
+  "rcpt_open_at": "2026-03-20T06:00",
+  "rcpt_close_at": "2026-04-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260114160016641282",
@@ -6877,7 +8249,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260114160016641282"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260114160016641282",
+  "rcpt_open_at": "2026-03-20T06:00",
+  "rcpt_close_at": "2026-04-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S260114161555536718",
@@ -6897,7 +8273,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260114161555536718"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S260114161555536718",
+  "rcpt_open_at": "2026-03-20T06:00",
+  "rcpt_close_at": "2026-04-30T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251218101511777722",
@@ -6917,7 +8297,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251218101511777722"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251218101511777722",
+  "rcpt_open_at": "2026-02-20T06:00",
+  "rcpt_close_at": "2026-03-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251218100620690852",
@@ -6937,7 +8321,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251218100620690852"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251218100620690852",
+  "rcpt_open_at": "2026-02-20T06:00",
+  "rcpt_close_at": "2026-03-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251218102116899056",
@@ -6957,7 +8345,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251218102116899056"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251218102116899056",
+  "rcpt_open_at": "2026-02-20T06:00",
+  "rcpt_close_at": "2026-03-31T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251216160940189443",
@@ -6977,7 +8369,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "전체",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251216160940189443"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251216160940189443",
+  "rcpt_open_at": "2026-01-20T06:00",
+  "rcpt_close_at": "2026-02-28T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251216161442528359",
@@ -6997,7 +8393,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "주말",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251216161442528359"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251216161442528359",
+  "rcpt_open_at": "2026-01-20T06:00",
+  "rcpt_close_at": "2026-02-28T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S251216155953902245",
@@ -7017,7 +8417,11 @@
   "time_start": "",
   "time_end": "",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251216155953902245"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S251216155953902245",
+  "rcpt_open_at": "2026-01-20T06:00",
+  "rcpt_close_at": "2026-02-28T20:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  },
  {
   "svc_id": "S241231203115293781",
@@ -7037,6 +8441,10 @@
   "time_start": "18:00",
   "time_end": "22:00",
   "day_type": "평일",
-  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231203115293781"
+  "url": "https://yeyak.seoul.go.kr/web/reservation/selectReservView.do?rsv_svc_id=S241231203115293781",
+  "rcpt_open_at": "2026-01-12T00:00",
+  "rcpt_close_at": "2026-10-31T00:00",
+  "quota": "1 팀",
+  "pick": "선착순"
  }
 ]
