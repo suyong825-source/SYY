@@ -134,6 +134,9 @@
   .day .cnt.zero { color: var(--ink-3); font-weight: 400; }
   .day.sat .dow { color: #3E7FA8; }
   .day.sun .dow { color: var(--warn); }
+  .day.hol { border-color: var(--warn); }
+  .day.hol .dow { color: var(--warn); font-weight: 700; }
+  .day.hol .dnum { color: var(--warn); }
   .day:hover { border-color: var(--court); }
   .day[aria-pressed="true"] {
     background: var(--court);
@@ -170,6 +173,13 @@
     margin: 10px 0 14px;
   }
   .countline b { color: var(--ink); font-size: 14px; }
+  .holtag {
+    font-family: var(--kr); font-weight: 700; font-size: 11px;
+    color: #fff; background: var(--warn);
+    padding: 2px 8px; border-radius: 2px; margin-left: 4px;
+  }
+  .holwhy { font-family: var(--kr); color: var(--ink-2); margin-left: 4px; }
+  .holwhy b { font-size: 12px; }
 
   /* ── results ────────────────────────────────── */
   .venue {
@@ -218,6 +228,8 @@
   .tag.open { background: var(--ball-soft); color: var(--ball); font-weight: 600; }
   .tag.shut { background: var(--surface-2); color: var(--closed); }
   .tag.soon { background: var(--court-soft); color: var(--court); font-weight: 600; }
+  .tag.sure { background: var(--warn); color: #fff; font-weight: 700; }
+  .tag.maybe { background: transparent; color: var(--warn); border: 1px solid var(--warn); }
   .go {
     font-family: var(--kr); font-size: 12.5px; font-weight: 700;
     text-decoration: none; white-space: nowrap;
@@ -295,6 +307,7 @@
     <button type="button" class="chip" id="f-open" aria-pressed="true">접수중만</button>
     <button type="button" class="chip" id="f-day" aria-pressed="false">주간·새벽</button>
     <button type="button" class="chip" id="f-night" aria-pressed="false">야간·저녁</button>
+    <button type="button" class="chip" id="f-holweek" aria-pressed="false" hidden>공휴일에 평일 건도 보기</button>
   </div>
 
   <p class="countline" id="countline">—</p>
@@ -319,6 +332,7 @@
 
   var services = DATA.services || [];
   var summary = DATA.summary || {};
+  var HOLIDAYS = DATA.holidays || {};
   var DOW = ["일", "월", "화", "수", "목", "금", "토"];
 
   var $ = function (id) { return document.getElementById(id); };
@@ -328,7 +342,8 @@
   var selected = new Date(today);
   var cursor = new Date(today.getFullYear(), today.getMonth(), 1);
 
-  var filters = { area: "", place: "", openOnly: true, day: false, night: false };
+  var filters = { area: "", place: "", openOnly: true, day: false, night: false,
+                 holidayWeekday: false };
 
   function iso(d) {
     return d.getFullYear() + "-" +
@@ -336,13 +351,30 @@
       String(d.getDate()).padStart(2, "0");
   }
 
-  function covers(svc, dateStr, weekday) {
+  function holidayName(dateStr) { return HOLIDAYS[dateStr] || ""; }
+
+  // 이 날짜에 코트가 어떤 일정으로 도는가
+  function dayKind(dateStr, weekday) {
+    if (holidayName(dateStr)) return "공휴일";
+    return (weekday === 0 || weekday === 6) ? "주말" : "평일";
+  }
+
+  /* 서비스가 이 날짜에 해당하는지 판정한다.
+     공휴일에는 평일 접수 건이 아니라 '주말·공휴일' 접수 건을 봐야 하므로,
+     평일 건은 기본적으로 제외하고 chip으로만 꺼내 볼 수 있게 한다. */
+  function covers(svc, dateStr, weekday, includeWeekdayOnHoliday) {
     if (!svc.use_start || !svc.use_end) return false;
     if (dateStr < svc.use_start || dateStr > svc.use_end) return false;
-    var weekend = (weekday === 0 || weekday === 6);
-    if (svc.day_type === "평일" && weekend) return false;
-    if (svc.day_type === "주말" && !weekend) return false;
-    return true;
+
+    var kind = dayKind(dateStr, weekday);
+    if (svc.day_type === "전체") return true;
+
+    if (kind === "평일") return svc.day_type === "평일";
+    if (kind === "주말") return svc.day_type === "주말";
+
+    // 공휴일: 주말 건은 모두 후보, 평일 건은 요청할 때만
+    if (svc.day_type === "주말") return true;
+    return !!includeWeekdayOnHoliday;
   }
 
   function isOpen(svc) {
@@ -362,8 +394,9 @@
   }
 
   function matching(dateStr, weekday, applyFilters) {
+    var withWeekday = applyFilters ? filters.holidayWeekday : false;
     return services.filter(function (s) {
-      if (!covers(s, dateStr, weekday)) return false;
+      if (!covers(s, dateStr, weekday, withWeekday)) return false;
       if (!applyFilters) return isOpen(s);
       if (filters.openOnly && !isOpen(s)) return false;
       if (filters.area && s.area !== filters.area) return false;
@@ -388,13 +421,15 @@
       var weekday = date.getDay();
       var count = matching(dateStr, weekday, false).length;
 
+      var hol = holidayName(dateStr);
       var btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "day" + (weekday === 6 ? " sat" : weekday === 0 ? " sun" : "");
+      btn.className = "day" + (hol ? " hol" : weekday === 6 ? " sat" : weekday === 0 ? " sun" : "");
+      if (hol) btn.title = hol;
       btn.setAttribute("aria-pressed", String(dateStr === iso(selected)));
       btn.dataset.date = dateStr;
       btn.innerHTML =
-        '<div class="dow">' + DOW[weekday] + "</div>" +
+        '<div class="dow">' + (hol ? "공휴" : DOW[weekday]) + "</div>" +
         '<div class="dnum">' + d + "</div>" +
         '<div class="cnt' + (count ? "" : " zero") + '">' + (count ? count : "·") + "</div>";
       btn.addEventListener("click", function () {
@@ -416,8 +451,22 @@
     var todayStr = iso(today);
     var list = matching(dateStr, weekday, true);
 
-    $("countline").innerHTML =
-      dateStr.replace(/-/g, ".") + " (" + DOW[weekday] + ") · <b>" + list.length + "</b>건";
+    var hol = holidayName(dateStr);
+    var kind = dayKind(dateStr, weekday);
+    $("f-holweek").hidden = (kind !== "공휴일");
+
+    var line = dateStr.replace(/-/g, ".") + " (" + DOW[weekday] + ") · <b>" + list.length + "</b>건";
+    if (hol) {
+      line += ' <span class="holtag">' + hol + "</span>";
+      if (weekday > 0 && weekday < 6) {
+        line += ' <span class="holwhy">평일이지만 공휴일이라 <b>주말·공휴일 접수 건</b>을 보여줍니다</span>';
+      }
+      if (kind === "공휴일") {
+        line += '<br><span class="holwhy">제목에 공휴일이 적힌 건은 <b>공휴일 명시</b>, 주말만 적힌 건은 <b>주말 표기</b>로 구분했습니다. ' +
+                "후자는 코트가 공휴일에도 주말 일정으로 도는지 예약 페이지에서 확인하세요.</span>";
+      }
+    }
+    $("countline").innerHTML = line;
 
     var box = $("results");
     box.innerHTML = "";
@@ -439,6 +488,11 @@
       return a.localeCompare(b, "ko");
     }).forEach(function (key) {
       var slots = venues[key].sort(function (a, b) {
+        if (kind === "공휴일") {
+          var ra = a.holiday_ok ? 0 : a.day_type === "주말" ? 1 : 2;
+          var rb = b.holiday_ok ? 0 : b.day_type === "주말" ? 1 : 2;
+          if (ra !== rb) return ra - rb;
+        }
         return (a.time_start || "zz").localeCompare(b.time_start || "zz") ||
                a.court.localeCompare(b.court);
       });
@@ -465,6 +519,15 @@
           : (s.slot || "시간 미표기");
 
         var tags = [];
+        // 공휴일에는 '공휴일'을 명시한 건과 '주말'만 적힌 건을 구분해 준다
+        if (kind === "공휴일" && s.day_type === "주말") {
+          tags.push(s.holiday_ok
+            ? '<span class="tag sure">공휴일 명시</span>'
+            : '<span class="tag maybe">주말 표기</span>');
+        }
+        if (kind === "공휴일" && s.day_type === "평일") {
+          tags.push('<span class="tag maybe">평일 건</span>');
+        }
         if (isOpen(s)) tags.push('<span class="tag open">접수중</span>');
         else tags.push('<span class="tag shut">' + (s.status || "상태미상") + "</span>");
         if (notYet(s, todayStr)) tags.push('<span class="tag soon">' + s.rcpt_start.replace(/-/g, ".") + " 접수시작</span>");
@@ -552,6 +615,7 @@
   chip("f-open", "openOnly", null);
   chip("f-day", "day", "night");
   chip("f-night", "night", "day");
+  chip("f-holweek", "holidayWeekday", null);
 
   $("prev-month").addEventListener("click", function () {
     cursor = new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1);

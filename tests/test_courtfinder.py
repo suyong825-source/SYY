@@ -128,3 +128,36 @@ def test_parse_slot_falls_back_to_clock_time():
 def test_day_type_treats_holiday_as_weekend():
     assert parser.parse_day_type("장충테니스장 3번코트(주말 및 공휴일)") == "주말"
     assert parser.parse_day_type("테니스장2(토/일/공휴일)-응봉공원") == "주말"
+
+
+def test_mentions_holiday():
+    assert parser.mentions_holiday("장충테니스장 3번코트(주말 및 공휴일)")
+    assert parser.mentions_holiday("테니스장2(토/일/공휴일)")
+    assert not parser.mentions_holiday("9월_월곡테니스장 3번 코트(주말)")
+
+
+def test_holiday_table_marks_rest_days():
+    import datetime as dt
+
+    from courtfinder import holidays
+
+    # 2026-09-25는 금요일이지만 추석이다
+    chuseok = dt.date(2026, 9, 25)
+    assert chuseok.weekday() == 4
+    assert holidays.is_holiday(chuseok)
+    assert holidays.is_rest_day(chuseok)
+    assert holidays.holiday_name(chuseok) == "추석"
+
+    # 평범한 화요일
+    plain = dt.date(2026, 10, 6)
+    assert not holidays.is_holiday(plain)
+    assert not holidays.is_rest_day(plain)
+
+    # 토요일은 공휴일이 아니어도 휴일 일정
+    assert holidays.is_rest_day(dt.date(2026, 10, 10))
+
+
+def test_holidays_are_embedded_in_page():
+    out = render.render([], dt.datetime(2026, 9, 25, 9, 0))
+    assert "2026-09-25" in out
+    assert "추석" in out

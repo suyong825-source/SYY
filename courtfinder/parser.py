@@ -64,6 +64,7 @@ class Service:
     use_start: str
     use_end: str
     court: str
+    holiday_ok: bool
     slot: str
     time_start: str
     time_end: str
@@ -138,6 +139,11 @@ def parse_slot(title: str, time_start: str = "") -> str:
     return ""
 
 
+def mentions_holiday(title: str) -> bool:
+    """제목이 공휴일을 명시하는지. '주말 및 공휴일', '토/일/공휴일' 등."""
+    return any(w in title for w in ("공휴", "휴일"))
+
+
 def parse_day_type(title: str) -> str:
     """평일/주말 구분. 제목에 단서가 없으면 '전체'."""
     has_weekday = "평일" in title
@@ -182,6 +188,7 @@ def parse_card(card_html: str) -> Service | None:
         use_start=_iso(use.group(1)) if use else "",
         use_end=_iso(use.group(2)) if use else "",
         court=parse_court(title),
+        holiday_ok=mentions_holiday(title),
         slot=parse_slot(title, time_start),
         time_start=time_start,
         time_end=time_end,

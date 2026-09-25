@@ -7,6 +7,8 @@ import html
 import json
 from pathlib import Path
 
+from .holidays import KR_HOLIDAYS
+
 TEMPLATE_PATH = Path(__file__).parent / "template.html"
 
 
@@ -44,6 +46,7 @@ def render(services: list[dict], generated_at: dt.datetime | None = None) -> str
     payload = {
         "services": services,
         "summary": summarize(services),
+        "holidays": KR_HOLIDAYS,
         "generatedAt": generated_at.strftime("%Y-%m-%d %H:%M"),
     }
     template = TEMPLATE_PATH.read_text(encoding="utf-8")
