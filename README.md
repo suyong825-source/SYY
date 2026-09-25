@@ -1,3 +1,19 @@
+# SYY
+
+개인용 도구 모음.
+
+| 도구 | 설명 |
+|---|---|
+| [`andopt`](#andopt--안드로이드-최적화-도구) | ADB로 안드로이드 기기를 진단·최적화하는 CLI |
+| [`courtfinder`](courtfinder/README.md) | 서울시 공공예약 테니스장을 날짜별로 보는 HTML 생성기 |
+
+```bash
+pip install -e ".[dev]"
+pytest
+```
+
+---
+
 # andopt — 안드로이드 최적화 도구
 
 ADB로 연결된 안드로이드 기기를 진단하고 최적화하는 커맨드라인 도구입니다.

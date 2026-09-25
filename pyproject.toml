@@ -3,9 +3,9 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "andopt"
+name = "syy-tools"
 version = "0.1.0"
-description = "ADB 기반 안드로이드 기기 진단 및 최적화 CLI"
+description = "안드로이드 최적화 CLI(andopt)와 서울시 테니스장 예약 조회 도구(courtfinder)"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
@@ -15,9 +15,13 @@ dev = ["pytest>=7"]
 
 [project.scripts]
 andopt = "andopt.cli:main"
+courtfinder = "courtfinder.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["andopt*"]
+include = ["andopt*", "courtfinder*"]
+
+[tool.setuptools.package-data]
+courtfinder = ["template.html"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

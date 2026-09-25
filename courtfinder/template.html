@@ -1,0 +1,584 @@
+<title>서울 테니스장 날짜별 조회</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root {
+    --paper:     #F0F2EC;
+    --surface:   #FFFFFF;
+    --surface-2: #E6EAE1;
+    --ink:       #161C17;
+    --ink-2:     #4B554C;
+    --ink-3:     #7B857C;
+    --rule:      #D5DBD1;
+    --rule-soft: #E4E8E0;
+    --court:     #2F6B4A;
+    --court-soft:#DCEAE0;
+    --ball:      #7A8A12;
+    --ball-soft: #EDF2C8;
+    --warn:      #A8552A;
+    --closed:    #8A8F89;
+
+    --kr: "Noto Sans KR", system-ui, -apple-system, "Malgun Gothic", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:     #101410;
+      --surface:   #181D18;
+      --surface-2: #232923;
+      --ink:       #E8EDE7;
+      --ink-2:     #AEB6AD;
+      --ink-3:     #7C857D;
+      --rule:      #2E352E;
+      --rule-soft: #232923;
+      --court:     #6FC192;
+      --court-soft:#1C2E23;
+      --ball:      #C3D63F;
+      --ball-soft: #2A2F13;
+      --warn:      #D9915C;
+      --closed:    #6B726B;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:     #101410;
+    --surface:   #181D18;
+    --surface-2: #232923;
+    --ink:       #E8EDE7;
+    --ink-2:     #AEB6AD;
+    --ink-3:     #7C857D;
+    --rule:      #2E352E;
+    --rule-soft: #232923;
+    --court:     #6FC192;
+    --court-soft:#1C2E23;
+    --ball:      #C3D63F;
+    --ball-soft: #2A2F13;
+    --warn:      #D9915C;
+    --closed:    #6B726B;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--kr);
+    font-size: 15px;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 900px; margin: 0 auto; padding-inline: 16px; padding-block: 0 64px; }
+  :focus-visible { outline: 2px solid var(--court); outline-offset: 2px; }
+
+  /* ── header ─────────────────────────────────── */
+  header { padding-block: 28px 18px; }
+  .kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--court);
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: clamp(23px, 5.2vw, 31px);
+    font-weight: 700;
+    letter-spacing: -.02em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .lede { color: var(--ink-2); margin: 0 0 14px; font-size: 14.5px; max-width: 60ch; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 6px 16px;
+    font-family: var(--mono); font-size: 11.5px; color: var(--ink-3);
+    border-top: 1px solid var(--rule); padding-top: 12px;
+  }
+  .meta b { color: var(--ink-2); font-weight: 500; }
+
+  /* ── date strip ─────────────────────────────── */
+  .datebar {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 20;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    margin-inline: -16px;
+    padding-inline: 16px;
+  }
+  .monthrow {
+    display: flex; align-items: center; gap: 10px;
+    padding-block: 10px 6px;
+  }
+  .monthrow h2 { font-size: 15px; margin: 0; font-weight: 700; flex: 1; }
+  .strip {
+    display: flex; gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+  }
+  .day {
+    flex: 0 0 auto;
+    width: 52px;
+    border: 1px solid var(--rule);
+    background: var(--surface);
+    border-radius: 3px;
+    padding: 7px 0 6px;
+    text-align: center;
+    cursor: pointer;
+    font-family: var(--mono);
+    line-height: 1.25;
+  }
+  .day .dow { font-size: 10px; color: var(--ink-3); letter-spacing: .06em; }
+  .day .dnum { font-size: 17px; font-weight: 600; color: var(--ink); }
+  .day .cnt { font-size: 10px; color: var(--court); font-weight: 600; min-height: 14px; }
+  .day .cnt.zero { color: var(--ink-3); font-weight: 400; }
+  .day.sat .dow { color: #3E7FA8; }
+  .day.sun .dow { color: var(--warn); }
+  .day:hover { border-color: var(--court); }
+  .day[aria-pressed="true"] {
+    background: var(--court);
+    border-color: var(--court);
+  }
+  .day[aria-pressed="true"] .dow,
+  .day[aria-pressed="true"] .dnum,
+  .day[aria-pressed="true"] .cnt { color: #fff; }
+
+  /* ── filters ────────────────────────────────── */
+  .filters {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-block: 16px 6px;
+  }
+  select, .chip, button.act {
+    font-family: var(--kr);
+    font-size: 13px;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    padding: 8px 11px;
+    cursor: pointer;
+  }
+  select { min-width: 118px; }
+  .chip[aria-pressed="true"] {
+    background: var(--court-soft);
+    border-color: var(--court);
+    color: var(--court);
+    font-weight: 700;
+  }
+  .countline {
+    font-family: var(--mono); font-size: 12px; color: var(--ink-3);
+    margin: 10px 0 14px;
+  }
+  .countline b { color: var(--ink); font-size: 14px; }
+
+  /* ── results ────────────────────────────────── */
+  .venue {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+  .venue-head {
+    display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--rule-soft);
+    background: var(--surface-2);
+  }
+  .venue-head h3 { margin: 0; font-size: 15.5px; font-weight: 700; }
+  .badge-area {
+    font-family: var(--mono); font-size: 11px;
+    color: var(--court); background: var(--court-soft);
+    padding: 2px 7px; border-radius: 2px;
+  }
+  .venue-head .n { margin-left: auto; font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
+
+  .slot {
+    display: grid;
+    grid-template-columns: 96px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .slot:last-child { border-bottom: 0; }
+  .slot-time {
+    font-family: var(--mono); font-size: 13px; font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .slot-time.none { color: var(--ink-3); font-weight: 400; }
+  .slot-name { font-size: 13.5px; color: var(--ink-2); min-width: 0; }
+  .slot-name .court { color: var(--ink); font-weight: 700; }
+  .tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 3px; }
+  .tag {
+    font-family: var(--mono); font-size: 10px;
+    padding: 1px 6px; border-radius: 2px;
+    background: var(--surface-2); color: var(--ink-3);
+  }
+  .tag.open { background: var(--ball-soft); color: var(--ball); font-weight: 600; }
+  .tag.shut { background: var(--surface-2); color: var(--closed); }
+  .tag.soon { background: var(--court-soft); color: var(--court); font-weight: 600; }
+  .go {
+    font-family: var(--kr); font-size: 12.5px; font-weight: 700;
+    text-decoration: none; white-space: nowrap;
+    color: #fff; background: var(--court);
+    border: 1px solid var(--court);
+    padding: 8px 13px; border-radius: 3px;
+  }
+  .go:hover { filter: brightness(1.1); }
+  .go.muted { background: transparent; color: var(--ink-3); border-color: var(--rule); }
+
+  @media (max-width: 520px) {
+    .slot { grid-template-columns: 1fr auto; row-gap: 6px; }
+    .slot-time { grid-column: 1 / -1; }
+  }
+
+  .empty {
+    border: 1px dashed var(--rule);
+    border-radius: 3px;
+    padding: 30px 18px;
+    text-align: center;
+    color: var(--ink-3);
+    font-size: 14px;
+  }
+  .empty b { color: var(--ink-2); }
+
+  .note {
+    margin-top: 26px;
+    border-left: 2px solid var(--court);
+    background: var(--court-soft);
+    padding: 12px 14px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--ink-2);
+    border-radius: 0 3px 3px 0;
+  }
+  .note b { color: var(--ink); }
+
+  footer {
+    margin-top: 28px; padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono); font-size: 11px; line-height: 1.7; color: var(--ink-3);
+  }
+  footer a { color: var(--court); }
+
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <p class="kicker">Seoul Public Tennis Courts</p>
+    <h1>날짜를 고르면 그날 예약 가능한 테니스장이 모두 나옵니다</h1>
+    <p class="lede">서울시 공공서비스예약의 테니스장 접수 건을 한곳에 모았습니다. 원래는 코트별로 흩어져 있어 날짜별로 비교할 수 없던 것을, 날짜 → 지역 → 시간대 순으로 볼 수 있게 정리했습니다.</p>
+    <p class="meta">
+      <span>수집 시각 <b>__GENERATED_AT__</b></span>
+      <span>총 <b id="m-total">-</b>건</span>
+      <span>접수중 <b id="m-open">-</b>건</span>
+      <span>출처 <a href="https://yeyak.seoul.go.kr/web/search/selectPageListDetailSearchImg.do?code=T100&amp;dCode=T108" target="_blank" rel="noopener">yeyak.seoul.go.kr</a></span>
+    </p>
+  </header>
+
+  <div class="datebar">
+    <div class="monthrow">
+      <button type="button" class="act" id="prev-month">‹</button>
+      <h2 id="month-label">—</h2>
+      <button type="button" class="act" id="today-btn">오늘</button>
+      <button type="button" class="act" id="next-month">›</button>
+    </div>
+    <div class="strip" id="strip"></div>
+  </div>
+
+  <div class="filters">
+    <select id="f-area" aria-label="지역 선택"><option value="">전체 지역</option></select>
+    <select id="f-place" aria-label="장소 선택"><option value="">전체 장소</option></select>
+    <button type="button" class="chip" id="f-open" aria-pressed="true">접수중만</button>
+    <button type="button" class="chip" id="f-day" aria-pressed="false">주간·새벽</button>
+    <button type="button" class="chip" id="f-night" aria-pressed="false">야간·저녁</button>
+  </div>
+
+  <p class="countline" id="countline">—</p>
+
+  <div id="results"></div>
+
+  <div class="note" id="note"></div>
+
+  <footer>
+    이 페이지는 서울시 공공서비스예약의 <b>공개 목록 페이지</b>를 읽어 만든 비공식 조회 도구입니다. 예약은 링크를 눌러 공식 사이트에서 직접 진행하세요.<br>
+    데이터는 수집 시점의 스냅샷이라 실제 잔여 자리와 다를 수 있습니다. 최종 확인은 항상 공식 사이트에서 하세요.
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var DATA = /*__DATA__*/null;
+  if (!DATA) { return; }
+
+  var services = DATA.services || [];
+  var summary = DATA.summary || {};
+  var DOW = ["일", "월", "화", "수", "목", "금", "토"];
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+  var selected = new Date(today);
+  var cursor = new Date(today.getFullYear(), today.getMonth(), 1);
+
+  var filters = { area: "", place: "", openOnly: true, day: false, night: false };
+
+  function iso(d) {
+    return d.getFullYear() + "-" +
+      String(d.getMonth() + 1).padStart(2, "0") + "-" +
+      String(d.getDate()).padStart(2, "0");
+  }
+
+  function covers(svc, dateStr, weekday) {
+    if (!svc.use_start || !svc.use_end) return false;
+    if (dateStr < svc.use_start || dateStr > svc.use_end) return false;
+    var weekend = (weekday === 0 || weekday === 6);
+    if (svc.day_type === "평일" && weekend) return false;
+    if (svc.day_type === "주말" && !weekend) return false;
+    return true;
+  }
+
+  function isOpen(svc) {
+    return svc.status === "접수중";
+  }
+
+  // 접수 시작 전인 건 — 날짜는 맞지만 아직 신청을 받지 않는 상태
+  function notYet(svc, todayStr) {
+    return svc.rcpt_start && todayStr < svc.rcpt_start;
+  }
+
+  // 제목에 시계 시간이 없는 건이 대부분이라 slot 라벨(주간/야간/새벽)로 거른다.
+  function nightSlot(svc) { return (svc.slot || "").indexOf("야간") >= 0; }
+  function daySlot(svc) {
+    var slot = svc.slot || "";
+    return slot.indexOf("주간") >= 0 || slot.indexOf("새벽") >= 0;
+  }
+
+  function matching(dateStr, weekday, applyFilters) {
+    return services.filter(function (s) {
+      if (!covers(s, dateStr, weekday)) return false;
+      if (!applyFilters) return isOpen(s);
+      if (filters.openOnly && !isOpen(s)) return false;
+      if (filters.area && s.area !== filters.area) return false;
+      if (filters.place && s.place !== filters.place) return false;
+      if (filters.day && !daySlot(s)) return false;
+      if (filters.night && !nightSlot(s)) return false;
+      return true;
+    });
+  }
+
+  /* ── date strip ───────────────────────────────── */
+  function buildStrip() {
+    var strip = $("strip");
+    strip.innerHTML = "";
+    var year = cursor.getFullYear(), month = cursor.getMonth();
+    $("month-label").textContent = year + "년 " + (month + 1) + "월";
+
+    var days = new Date(year, month + 1, 0).getDate();
+    for (var d = 1; d <= days; d++) {
+      var date = new Date(year, month, d);
+      var dateStr = iso(date);
+      var weekday = date.getDay();
+      var count = matching(dateStr, weekday, false).length;
+
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "day" + (weekday === 6 ? " sat" : weekday === 0 ? " sun" : "");
+      btn.setAttribute("aria-pressed", String(dateStr === iso(selected)));
+      btn.dataset.date = dateStr;
+      btn.innerHTML =
+        '<div class="dow">' + DOW[weekday] + "</div>" +
+        '<div class="dnum">' + d + "</div>" +
+        '<div class="cnt' + (count ? "" : " zero") + '">' + (count ? count : "·") + "</div>";
+      btn.addEventListener("click", function () {
+        selected = new Date(this.dataset.date + "T00:00:00");
+        buildStrip();
+        renderResults();
+      });
+      strip.appendChild(btn);
+    }
+
+    var active = strip.querySelector('[aria-pressed="true"]');
+    if (active) active.scrollIntoView({ inline: "center", block: "nearest" });
+  }
+
+  /* ── results ──────────────────────────────────── */
+  function renderResults() {
+    var dateStr = iso(selected);
+    var weekday = selected.getDay();
+    var todayStr = iso(today);
+    var list = matching(dateStr, weekday, true);
+
+    $("countline").innerHTML =
+      dateStr.replace(/-/g, ".") + " (" + DOW[weekday] + ") · <b>" + list.length + "</b>건";
+
+    var box = $("results");
+    box.innerHTML = "";
+
+    if (!list.length) {
+      box.innerHTML =
+        '<div class="empty"><b>이 조건에 맞는 접수 건이 없습니다.</b><br>' +
+        "날짜 위 숫자가 그날의 접수중 건수입니다. 숫자가 있는 날짜를 골라보세요.</div>";
+      return;
+    }
+
+    var venues = {};
+    list.forEach(function (s) {
+      var key = s.place + "|" + s.area;
+      (venues[key] = venues[key] || []).push(s);
+    });
+
+    Object.keys(venues).sort(function (a, b) {
+      return a.localeCompare(b, "ko");
+    }).forEach(function (key) {
+      var slots = venues[key].sort(function (a, b) {
+        return (a.time_start || "zz").localeCompare(b.time_start || "zz") ||
+               a.court.localeCompare(b.court);
+      });
+      var parts = key.split("|");
+
+      var card = document.createElement("div");
+      card.className = "venue";
+
+      var head = document.createElement("div");
+      head.className = "venue-head";
+      head.innerHTML =
+        "<h3></h3>" +
+        (parts[1] ? '<span class="badge-area">' + parts[1] + "</span>" : "") +
+        '<span class="n">' + slots.length + "건</span>";
+      head.querySelector("h3").textContent = parts[0];
+      card.appendChild(head);
+
+      slots.forEach(function (s) {
+        var row = document.createElement("div");
+        row.className = "slot";
+
+        var time = s.time_start
+          ? s.time_start + " – " + s.time_end
+          : (s.slot || "시간 미표기");
+
+        var tags = [];
+        if (isOpen(s)) tags.push('<span class="tag open">접수중</span>');
+        else tags.push('<span class="tag shut">' + (s.status || "상태미상") + "</span>");
+        if (notYet(s, todayStr)) tags.push('<span class="tag soon">' + s.rcpt_start.replace(/-/g, ".") + " 접수시작</span>");
+        if (s.day_type !== "전체") tags.push('<span class="tag">' + s.day_type + "</span>");
+        if (s.slot && s.time_start) tags.push('<span class="tag">' + s.slot + "</span>");
+        if (s.paid) tags.push('<span class="tag">' + s.paid + "</span>");
+
+        row.innerHTML =
+          '<div class="slot-time' + (s.time_start ? "" : " none") + '">' + time + "</div>" +
+          '<div class="slot-name"><span class="nm"></span>' +
+          '<div class="tags">' + tags.join("") + "</div></div>" +
+          '<a class="go' + (isOpen(s) ? "" : " muted") + '" target="_blank" rel="noopener">' +
+          (isOpen(s) ? "예약하기" : "보기") + "</a>";
+
+        var nm = row.querySelector(".nm");
+        if (s.court) {
+          var strong = document.createElement("span");
+          strong.className = "court";
+          strong.textContent = s.court + " ";
+          nm.appendChild(strong);
+        }
+        nm.appendChild(document.createTextNode(s.title));
+        row.querySelector(".go").href = s.url;
+
+        card.appendChild(row);
+      });
+
+      box.appendChild(card);
+    });
+  }
+
+  /* ── filters ──────────────────────────────────── */
+  function fillSelects() {
+    var areaSel = $("f-area"), placeSel = $("f-place");
+    (summary.areas || []).forEach(function (a) {
+      var o = document.createElement("option");
+      o.value = a; o.textContent = a;
+      areaSel.appendChild(o);
+    });
+    refreshPlaces();
+    placeSel.addEventListener("change", function () {
+      filters.place = this.value;
+      buildStrip(); renderResults();
+    });
+    areaSel.addEventListener("change", function () {
+      filters.area = this.value;
+      filters.place = "";
+      refreshPlaces();
+      buildStrip(); renderResults();
+    });
+  }
+
+  function refreshPlaces() {
+    var placeSel = $("f-place");
+    var pool = services.filter(function (s) {
+      return !filters.area || s.area === filters.area;
+    });
+    var names = [];
+    pool.forEach(function (s) {
+      if (s.place && names.indexOf(s.place) < 0) names.push(s.place);
+    });
+    names.sort(function (a, b) { return a.localeCompare(b, "ko"); });
+    placeSel.innerHTML = '<option value="">전체 장소</option>';
+    names.forEach(function (n) {
+      var o = document.createElement("option");
+      o.value = n; o.textContent = n;
+      placeSel.appendChild(o);
+    });
+  }
+
+  function chip(id, key, exclusive) {
+    $(id).addEventListener("click", function () {
+      var on = this.getAttribute("aria-pressed") !== "true";
+      filters[key] = on;
+      this.setAttribute("aria-pressed", String(on));
+      if (on && exclusive) {
+        filters[exclusive] = false;
+        var other = exclusive === "day" ? $("f-day") : $("f-night");
+        other.setAttribute("aria-pressed", "false");
+      }
+      buildStrip(); renderResults();
+    });
+  }
+
+  chip("f-open", "openOnly", null);
+  chip("f-day", "day", "night");
+  chip("f-night", "night", "day");
+
+  $("prev-month").addEventListener("click", function () {
+    cursor = new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1);
+    buildStrip();
+  });
+  $("next-month").addEventListener("click", function () {
+    cursor = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1);
+    buildStrip();
+  });
+  $("today-btn").addEventListener("click", function () {
+    selected = new Date(today);
+    cursor = new Date(today.getFullYear(), today.getMonth(), 1);
+    buildStrip(); renderResults();
+  });
+
+  /* ── boot ─────────────────────────────────────── */
+  $("m-total").textContent = summary.total || services.length;
+  $("m-open").textContent = summary.open || 0;
+
+  $("note").innerHTML =
+    "<b>이 표가 보여주는 것</b> — 해당 날짜가 <b>이용기간에 포함되고 요일 조건(평일/주말)이 맞는</b> 접수 건입니다. " +
+    "서울시 사이트는 코트·기간 단위로 접수를 올리기 때문에, 원본 목록에는 \"10월 3일 14시에 몇 자리 남음\" 같은 실시간 잔여석 정보가 없습니다. " +
+    "시간대도 대부분 '야간', '주간' 같은 표현으로만 적혀 있어 그대로 옮겼습니다. " +
+    "정확한 잔여 여부는 <b>예약하기</b>를 눌러 공식 페이지의 달력에서 확인하세요.";
+
+  fillSelects();
+  buildStrip();
+  renderResults();
+})();
+</script>
