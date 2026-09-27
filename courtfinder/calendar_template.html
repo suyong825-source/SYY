@@ -82,7 +82,12 @@
               font-family:var(--mono); font-size:11px; color:var(--ink-3); }
   .dow-head.sat { color:#3E7FA8; } .dow-head.sun { color:var(--warn); }
   .cell { background:var(--surface); min-height:88px; padding:6px 6px 8px;
-          display:flex; flex-direction:column; gap:3px; }
+          display:flex; flex-direction:column; gap:3px;
+          border:0; width:100%; text-align:left; font-family:var(--kr);
+          color:var(--ink); cursor:default; }
+  .cell.has:hover { background:var(--court-soft); }
+  .cell.has { cursor:pointer; }
+  .cell.sel { box-shadow:inset 0 0 0 2px var(--warn); }
   .cell.pad { background:var(--surface-2); opacity:.5; }
   .cell.today { box-shadow:inset 0 0 0 2px var(--court); }
   .dnum { font-family:var(--mono); font-size:12px; color:var(--ink-3);
@@ -95,7 +100,41 @@
   .ev.pred { background:var(--surface-2); color:var(--ink-2);
              border-left-color:var(--dim); border-left-style:dashed; font-weight:400; }
   .ev .t { font-family:var(--mono); font-weight:600; }
-  .more { font-family:var(--mono); font-size:10px; color:var(--ink-3); }
+  .more { font-family:var(--mono); font-size:10px; color:var(--court); font-weight:600; }
+
+  /* 하루 상세 */
+  .daypanel { margin-top:14px; border:1px solid var(--court); border-radius:3px;
+              background:var(--surface); overflow:hidden; }
+  .daypanel-head { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;
+                   padding:11px 14px; background:var(--court-soft);
+                   border-bottom:1px solid var(--rule); }
+  .daypanel-head h4 { margin:0; font-size:15px; font-weight:700; }
+  .daypanel-head .n { font-family:var(--mono); font-size:11.5px; color:var(--court);
+                      font-weight:600; }
+  .daypanel-head .close { margin-left:auto; font-size:12px; padding:5px 10px; }
+  .drow { display:grid; grid-template-columns:62px 1fr auto; gap:12px;
+          align-items:center; padding:10px 14px;
+          border-bottom:1px solid var(--rule-soft); }
+  .drow:last-child { border-bottom:0; }
+  .drow .tm { font-family:var(--mono); font-size:14px; font-weight:600;
+              font-variant-numeric:tabular-nums; }
+  .drow .nm { font-size:13.5px; min-width:0; }
+  .drow .nm .who { font-weight:700; }
+  .drow .nm .sub { display:block; font-size:11.5px; color:var(--ink-3); margin-top:2px; }
+  .drow .tags { display:flex; gap:5px; flex-wrap:wrap; margin-top:4px; }
+  .drow a.go { font-family:var(--kr); font-size:12px; font-weight:700; color:#fff;
+               background:var(--court); border-radius:2px; padding:7px 11px;
+               text-decoration:none; white-space:nowrap; }
+  .drow a.go:hover { filter:brightness(1.1); }
+  @media (max-width:520px) {
+    .drow { grid-template-columns:56px 1fr; row-gap:8px; }
+    .drow a.go { grid-column:2; justify-self:start; }
+  }
+  .pill.v-verified { background:var(--court); color:#fff; font-weight:700; }
+  .pill.v-rough { background:var(--court-soft); color:var(--court); font-weight:600; }
+  .pill.v-wobbly { background:var(--warn-soft); color:var(--warn); font-weight:600; }
+  .pill.v-unverified { background:transparent; color:var(--dim);
+                       border:1px dashed var(--rule); }
 
   @media (max-width:640px) {
     .cell { min-height:66px; padding:4px; }
@@ -164,7 +203,7 @@
   <section>
     <div class="sec-head">
       <h2 class="sec">달력</h2>
-      <span class="sec-hint">실선 = 확정 · 점선 = 추정</span>
+      <span class="sec-hint">날짜를 누르면 그날 전체가 펼쳐집니다 · 실선 = 확정, 점선 = 추정</span>
     </div>
     <div class="monthnav">
       <button type="button" class="ghost" id="prev">‹ 이전달</button>
@@ -173,6 +212,7 @@
       <button type="button" class="ghost" id="next">다음달 ›</button>
     </div>
     <div class="grid" id="grid"></div>
+    <div id="daypanel"></div>
   </section>
 
   <section>
@@ -182,7 +222,7 @@
     </div>
     <div class="tablewrap">
       <table>
-        <thead><tr><th>개방 시각</th><th>알람</th><th>코트</th><th>주기</th><th>근거</th><th></th></tr></thead>
+        <thead><tr><th>개방 시각</th><th>알람</th><th>코트</th><th>주기</th><th>근거</th><th>판정</th><th></th></tr></thead>
         <tbody id="next-body"></tbody>
       </table>
     </div>
@@ -195,7 +235,7 @@
     </div>
     <div class="tablewrap">
       <table>
-        <thead><tr><th>코트</th><th>지역</th><th>주기</th><th>개방일</th><th>시각</th><th>이용기간</th><th>리드</th><th>관찰</th></tr></thead>
+        <thead><tr><th>코트</th><th>지역</th><th>주기</th><th>개방일</th><th>시각</th><th>이용기간</th><th>리드</th><th>관찰</th><th>판정</th></tr></thead>
         <tbody id="pat-body"></tbody>
       </table>
     </div>
@@ -230,6 +270,7 @@
   var today = new Date();
   today.setHours(0, 0, 0, 0);
   var cursor = new Date(today.getFullYear(), today.getMonth(), 1);
+  var selectedDay = null;
 
   function pad(n) { return String(n).padStart(2, "0"); }
   function dayKey(d) { return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
@@ -276,36 +317,138 @@
   }
 
   function cell(date, isPad) {
-    var box = document.createElement("div");
-    box.className = "cell" + (isPad ? " pad" : "");
-    if (!isPad && dayKey(date) === dayKey(today)) box.className += " today";
+    var list = byDay[dayKey(date)] || [];
+    var box = document.createElement(list.length && !isPad ? "button" : "div");
+    if (box.tagName === "BUTTON") box.type = "button";
+
+    box.className = "cell" + (isPad ? " pad" : "") +
+      (list.length && !isPad ? " has" : "") +
+      (!isPad && dayKey(date) === dayKey(today) ? " today" : "") +
+      (!isPad && dayKey(date) === selectedDay ? " sel" : "");
 
     var num = document.createElement("div");
     num.className = "dnum";
     num.textContent = date.getDate();
     box.appendChild(num);
 
-    var list = byDay[dayKey(date)] || [];
-    list.slice(0, 3).forEach(function (e) {
-      var item = document.createElement("button");
-      item.type = "button";
+    // 셀에는 두 건까지만 미리 보이고, 나머지는 날짜를 눌러 펼친다
+    list.slice(0, 2).forEach(function (e) {
+      var item = document.createElement("div");
       item.className = "ev" + (e.kind === "predicted" ? " pred" : "");
       item.innerHTML = '<span class="t">' + e.at.slice(11) + "</span> ";
-      item.appendChild(document.createTextNode(e.place.replace("테니스장", "")));
-      item.title = e.place + " (" + e.area + ") " + e.at.slice(11) +
-        (e.kind === "predicted" ? " — 추정" : " — 확정");
-      item.addEventListener("click", function () {
-        if (e.url) window.open(e.url, "_blank", "noopener");
-      });
+      item.appendChild(document.createTextNode(shortName(e.place)));
       box.appendChild(item);
     });
-    if (list.length > 3) {
+    if (list.length > 2) {
       var more = document.createElement("div");
       more.className = "more";
-      more.textContent = "+" + (list.length - 3) + "건";
+      more.textContent = "+" + (list.length - 2) + "건 더보기";
       box.appendChild(more);
     }
+
+    if (list.length && !isPad) {
+      var key = dayKey(date);
+      box.setAttribute("aria-label", key + " 개방 " + list.length + "건 보기");
+      box.addEventListener("click", function () {
+        selectedDay = (selectedDay === key) ? null : key;
+        buildGrid();
+        showDay();
+      });
+    }
     return box;
+  }
+
+  function shortName(place) {
+    return place.replace(/\s*테니스장\s*/g, "").replace(/\s*한강공원\s*/g, "") || place;
+  }
+
+  /* ── 하루 상세 ─────────────────────────── */
+  function showDay() {
+    var panel = $("daypanel");
+    panel.innerHTML = "";
+    if (!selectedDay) return;
+
+    var list = byDay[selectedDay] || [];
+    var date = new Date(selectedDay + "T00:00:00");
+
+    var box = document.createElement("div");
+    box.className = "daypanel";
+
+    var head = document.createElement("div");
+    head.className = "daypanel-head";
+    head.innerHTML =
+      "<h4>" + selectedDay.replace(/-/g, ".") + " (" + DOW[date.getDay()] + ")</h4>" +
+      '<span class="n">개방 ' + list.length + "건</span>" +
+      '<button type="button" class="ghost close">닫기</button>';
+    head.querySelector(".close").addEventListener("click", function () {
+      selectedDay = null;
+      buildGrid();
+      showDay();
+    });
+    box.appendChild(head);
+
+    list.forEach(function (e) {
+      var row = document.createElement("div");
+      row.className = "drow";
+
+      var time = document.createElement("div");
+      time.className = "tm";
+      time.textContent = e.at.slice(11);
+      row.appendChild(time);
+
+      var name = document.createElement("div");
+      name.className = "nm";
+      var who = document.createElement("span");
+      who.className = "who";
+      who.textContent = e.place;
+      name.appendChild(who);
+      name.appendChild(document.createTextNode(" " + e.area));
+
+      var sub = document.createElement("span");
+      sub.className = "sub";
+      sub.textContent = e.why || "";
+      name.appendChild(sub);
+
+      var tags = document.createElement("div");
+      tags.className = "tags";
+      tags.innerHTML =
+        '<span class="pill ' + cadClass(e.cadence) + '">' + cadLabel(e.cadence) +
+          (e.span ? " " + e.span + "일치" : "") + "</span>" +
+        '<span class="pill ' + (e.kind === "confirmed" ? "ok" : "guess") + '">' +
+          (e.kind === "confirmed" ? "확정 공고" : "추정") + "</span>" +
+        '<span class="pill ' + verdictClass(e.verdict) + '">' + e.verdict + "</span>" +
+        '<span class="pill guess">알람 ' + alarmOf(e.at) + "</span>";
+      name.appendChild(tags);
+      row.appendChild(name);
+
+      var link = document.createElement("div");
+      if (e.url) {
+        var a = document.createElement("a");
+        a.className = "go";
+        a.href = e.url;
+        a.target = "_blank";
+        a.rel = "noopener";
+        a.textContent = "예약 페이지";
+        link.appendChild(a);
+      }
+      row.appendChild(link);
+
+      box.appendChild(row);
+    });
+
+    panel.appendChild(box);
+    panel.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }
+
+  function alarmOf(at) {
+    var opens = new Date(at + ":00");
+    var alarm = new Date(opens.getTime() - 10 * 60000);
+    return pad(alarm.getHours()) + ":" + pad(alarm.getMinutes());
+  }
+
+  function verdictClass(v) {
+    return { "검증됨": "v-verified", "대체로 일치": "v-rough",
+             "흔들림": "v-wobbly", "미검증": "v-unverified" }[v] || "v-unverified";
   }
 
   /* ── 다가오는 개방 ─────────────────────── */
@@ -326,12 +469,13 @@
         '<td><span class="pill ' + cadClass(e.cadence) + '">' + cadLabel(e.cadence) + "</span></td>" +
         '<td><span class="pill ' + (e.kind === "confirmed" ? "ok" : "guess") + '">' +
           (e.kind === "confirmed" ? "확정" : "추정 " + e.rounds + "회") + "</span></td>" +
+        '<td><span class="pill ' + verdictClass(e.verdict) + '">' + e.verdict + "</span></td>" +
         "<td></td>";
       tr.children[2].textContent = e.place + " (" + e.area + ")";
       if (e.url) {
         var a = document.createElement("a");
         a.href = e.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = "예약 →";
-        tr.children[5].appendChild(a);
+        tr.children[6].appendChild(a);
       }
       body.appendChild(tr);
     });
@@ -369,7 +513,8 @@
         '<td class="mono">' + (p.schedulable ? p.open_time : "—") + "</td>" +
         '<td class="mono">' + (p.span ? p.span + "일" : "—") + "</td>" +
         '<td class="mono">' + (p.schedulable ? lead : "—") + "</td>" +
-        '<td class="mono">' + p.rounds + "회</td>";
+        '<td class="mono">' + p.rounds + "회</td>" +
+        '<td><span class="pill ' + verdictClass(p.verdict) + '">' + p.verdict + "</span></td>";
       tr.children[0].textContent = p.place;
       tr.children[1].textContent = p.area;
       body.appendChild(tr);
@@ -398,21 +543,24 @@
     }
   });
 
-  $("prev").addEventListener("click", function () {
-    cursor = new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1); buildGrid();
-  });
-  $("next").addEventListener("click", function () {
-    cursor = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1); buildGrid();
-  });
-  $("today-btn").addEventListener("click", function () {
-    cursor = new Date(today.getFullYear(), today.getMonth(), 1); buildGrid();
-  });
+  function goMonth(delta) {
+    cursor = delta === null
+      ? new Date(today.getFullYear(), today.getMonth(), 1)
+      : new Date(cursor.getFullYear(), cursor.getMonth() + delta, 1);
+    selectedDay = null;
+    buildGrid();
+    showDay();
+  }
+  $("prev").addEventListener("click", function () { goMonth(-1); });
+  $("next").addEventListener("click", function () { goMonth(1); });
+  $("today-btn").addEventListener("click", function () { goMonth(null); });
 
   $("m-ev").textContent = EVENTS.length;
   $("m-ok").textContent = EVENTS.filter(function (e) { return e.kind === "confirmed"; }).length;
   $("m-pl").textContent = new Set(EVENTS.map(function (e) { return e.place; })).size;
 
   buildGrid();
+  showDay();
   buildNext();
   buildPatterns();
 })();

@@ -261,3 +261,32 @@ def alarm_message(entry: dict, minutes_before: int = 10) -> str:
         f"{entry['place']}({entry['area']}) 예약창이 {minutes_before}분 뒤 "
         f"{opens.strftime('%H:%M')}에 열립니다{window}.{hedge}"
     )
+
+
+VERDICT_VERIFIED = "검증됨"
+VERDICT_ROUGH = "대체로 일치"
+VERDICT_WOBBLY = "흔들림"
+VERDICT_UNVERIFIED = "미검증"
+
+
+def verdict(pattern: dict) -> tuple[str, str]:
+    """개방일 예측을 얼마나 믿을 수 있는지 판정한다.
+
+    회차를 여러 번 봤고 그때마다 같은 날짜였으면 믿을 만하다. 한 번만 봤으면
+    주기 자체를 검증하지 못한 것이고, 볼 때마다 날짜가 달랐으면 흔들리는 것이다.
+    """
+    if not pattern.get("schedulable"):
+        return VERDICT_UNVERIFIED, "상시·장기 접수라 개방일이 없습니다"
+
+    rounds = pattern.get("rounds", 0)
+    days = pattern.get("open_days") or []
+
+    if rounds <= 1:
+        return VERDICT_UNVERIFIED, "회차를 한 번만 봐서 개방일을 확인하지 못했습니다"
+    if len(days) == 1:
+        return VERDICT_VERIFIED, f"{rounds}회 모두 {days[0]}일에 열렸습니다"
+    if pattern.get("cadence") == "half-monthly" and len(days) == 2:
+        return VERDICT_VERIFIED, f"반달 주기라 {days[0]}일·{days[1]}일 두 번이 정상입니다"
+    if len(days) == 2 and abs(days[0] - days[1]) <= 2:
+        return VERDICT_ROUGH, f"개방일이 {days[0]}~{days[1]}일로 조금 움직입니다"
+    return VERDICT_WOBBLY, f"개방일이 {', '.join(str(d) + '일' for d in days)}로 흔들립니다"

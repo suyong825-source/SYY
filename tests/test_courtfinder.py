@@ -462,3 +462,77 @@ def test_month_long_round_that_is_not_a_full_month_is_still_monthly():
     )
     assert pattern["cadence"] == "monthly"
     assert pattern["schedulable"] is True
+
+
+# ── 예측 신뢰도 판정 ───────────────────────────────────────────
+def test_verdict_verified_when_every_round_used_the_same_day():
+    from courtfinder import predict
+
+    records = [
+        _rec("신도림", "2026-08-25T07:00", "2026-09-01", "2026-09-30"),
+        _rec("신도림", "2026-09-25T07:00", "2026-10-01", "2026-10-31"),
+    ]
+    mark, why = predict.verdict(predict.infer_pattern(records))
+    assert mark == predict.VERDICT_VERIFIED
+    assert "25일" in why
+
+
+def test_verdict_unverified_with_a_single_round():
+    from courtfinder import predict
+
+    mark, _ = predict.verdict(
+        predict.infer_pattern([_rec("독산", "2026-09-24T09:00", "2026-10-01", "2026-10-31")])
+    )
+    assert mark == predict.VERDICT_UNVERIFIED
+
+
+def test_verdict_accepts_two_days_for_a_half_month_cadence():
+    from courtfinder import predict
+
+    records = [
+        _rec("가좌", "2026-09-10T00:00", "2026-09-16", "2026-09-30"),
+        _rec("가좌", "2026-09-25T00:00", "2026-10-01", "2026-10-15"),
+    ]
+    mark, _ = predict.verdict(predict.infer_pattern(records))
+    assert mark == predict.VERDICT_VERIFIED
+
+
+def test_verdict_flags_a_wobbly_open_day():
+    from courtfinder import predict
+
+    records = [
+        _rec("선우", "2026-07-23T09:30", "2026-08-01", "2026-08-31"),
+        _rec("선우", "2026-08-25T09:30", "2026-09-01", "2026-09-30"),
+        _rec("선우", "2026-09-27T09:30", "2026-10-01", "2026-10-31"),
+    ]
+    mark, why = predict.verdict(predict.infer_pattern(records))
+    assert mark == predict.VERDICT_WOBBLY
+    assert "23일" in why and "27일" in why
+
+
+def test_verdict_calls_a_small_wobble_rough():
+    from courtfinder import predict
+
+    records = [
+        _rec("월드컵", "2026-08-15T13:00", "2026-09-01", "2026-09-30"),
+        _rec("월드컵", "2026-09-16T13:00", "2026-10-01", "2026-10-31"),
+    ]
+    mark, _ = predict.verdict(predict.infer_pattern(records))
+    assert mark == predict.VERDICT_ROUGH
+
+
+def test_standing_reservation_has_no_open_day_verdict():
+    from courtfinder import predict
+
+    mark, why = predict.verdict(
+        predict.infer_pattern([_rec("탄천", "2026-09-25T14:00", "2026-01-01", "2026-12-31")])
+    )
+    assert mark == predict.VERDICT_UNVERIFIED
+    assert "상시" in why
+
+
+def test_ics_description_carries_the_verdict_reason():
+    from courtfinder import ics
+
+    text = ics.render(_ics_records(), now=_ics_now(), horizon_days=60)
+    assert "회차를 한 번만" in text or "모두" in text

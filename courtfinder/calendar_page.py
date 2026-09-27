@@ -28,6 +28,8 @@ def build_payload(records: list[dict], horizon_days: int = 100) -> dict:
             "rounds": e["rounds"],
             "lead": e["lead_days"],
             "span": e["span_days"],
+            "verdict": e.get("verdict", ""),
+            "why": e.get("verdict_why", ""),
             "url": e["url"],
         }
         for e in ics.series(records, horizon_days=horizon_days)
@@ -36,7 +38,10 @@ def build_payload(records: list[dict], horizon_days: int = 100) -> dict:
     patterns = []
     for (place, _time), group in predict.by_slot(records).items():
         pattern = predict.infer_pattern(group)
+        mark, why = predict.verdict(pattern)
         patterns.append({
+            "verdict": mark,
+            "why": why,
             "place": place,
             "area": group[0].get("area", ""),
             "cadence": pattern["cadence"],

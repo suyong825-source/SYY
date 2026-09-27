@@ -10,7 +10,7 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 
-from .predict import KST, _parse, alarm_time, by_slot, infer_pattern, predict_next
+from .predict import KST, _parse, alarm_time, by_slot, infer_pattern, predict_next, verdict
 
 CAL_NAME = "서울 테니스장 예약 오픈"
 CAL_DESC = "서울시 공공서비스예약 테니스장의 접수 개방 일정. 확정은 사이트 공고, 추정은 과거 패턴 계산값."
@@ -98,7 +98,10 @@ def series(records: list[dict], now: dt.datetime | None = None,
 
 def _event(place: str, sample: dict, pattern: dict,
            opens_at: dt.datetime, kind: str) -> dict:
+    mark, why = verdict(pattern)
     return {
+        "verdict": mark,
+        "verdict_why": why,
         "place": place,
         "area": sample.get("area", ""),
         "opens_at": opens_at,
@@ -133,7 +136,7 @@ def _describe(event: dict) -> str:
     if event["kind"] == "confirmed":
         lines.append("근거: 사이트에 올라온 공고 (확정)")
     else:
-        lines.append(f"근거: 과거 {event['rounds']}회 관찰 패턴으로 계산한 추정 — 실제와 다를 수 있습니다")
+        lines.append(f"근거: 추정 — {event.get('verdict_why', '')}")
 
     if event.get("url"):
         lines.append("")
