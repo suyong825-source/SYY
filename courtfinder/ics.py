@@ -10,7 +10,7 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 
-from .predict import KST, _parse, alarm_time, infer_pattern, predict_next, by_place
+from .predict import KST, _parse, alarm_time, by_slot, infer_pattern, predict_next
 
 CAL_NAME = "서울 테니스장 예약 오픈"
 CAL_DESC = "서울시 공공서비스예약 테니스장의 접수 개방 일정. 확정은 사이트 공고, 추정은 과거 패턴 계산값."
@@ -69,7 +69,7 @@ def series(records: list[dict], now: dt.datetime | None = None,
     limit = now + dt.timedelta(days=horizon_days)
     events: list[dict] = []
 
-    for place, group in sorted(by_place(records).items()):
+    for (place, _time), group in by_slot(records).items():
         pattern = infer_pattern(group)
         if not pattern.get("schedulable"):
             continue  # 상시·장기 접수는 '개방일'이라는 게 없다

@@ -15,8 +15,9 @@ KST = ZoneInfo("Asia/Seoul")
 # 이용기간 길이로 회차 주기를 가른다
 _WEEKLY = range(1, 10)        # 9일 이하 → 주 단위 회차
 _HALF_MONTH = range(10, 20)   # 10~19일 → 반달 회차 (1~15일 / 16~31일)
-_MONTHLY = range(25, 40)      # 25~39일 → 월 단위 회차
-# 40일을 넘으면 회차가 아니라 연간·상시 접수로 본다 (예: 1년짜리 이용기간)
+_MONTHLY = range(20, 46)      # 20~45일 → 월 단위 회차. 한 달을 통으로 열지 않고
+                              # 22일치처럼 어정쩡하게 끊는 곳도 여기에 든다
+# 45일을 넘으면 회차가 아니라 연간·상시 접수로 본다 (예: 1년짜리 이용기간)
 
 CADENCE_LABEL = {
     "weekly": "주 단위",
@@ -42,6 +43,49 @@ def _parse_date(value: str) -> dt.date | None:
         return dt.date.fromisoformat(value)
     except (ValueError, TypeError):
         return None
+
+
+# 한 코트 안에서도 개방 시각이 갈리는 곳이 있다(예: 정릉 A·B코트 12:00, C코트 10:00).
+# 반대로 담당자가 한 건만 2분 늦게 올린 것 같은 이상치도 섞인다(한남 09:02 한 건).
+# 그래서 시각별로 나누되, 뒷받침이 약한 시각은 버린다.
+MIN_SLOT_RECORDS = 2
+MIN_SLOT_SHARE = 0.15
+
+
+def split_slots(group: list[dict]) -> dict[str, list[dict]]:
+    """한 코트의 기록을 개방 시각별로 나눈다. 이상치 시각은 떨어낸다.
+
+    모든 시각이 기준에 못 미치면(관찰이 통째로 적은 코트) 가장 많은 것 하나만 남긴다.
+    """
+    slots: dict[str, list[dict]] = defaultdict(list)
+    for record in group:
+        opened = _parse(record.get("rcpt_open_at", ""))
+        if opened:
+            slots[opened.strftime("%H:%M")].append(record)
+
+    if not slots:
+        return {}
+
+    total = sum(len(v) for v in slots.values())
+    kept = {
+        time: rows
+        for time, rows in slots.items()
+        if len(rows) >= MIN_SLOT_RECORDS and len(rows) / total >= MIN_SLOT_SHARE
+    }
+    if kept:
+        return dict(sorted(kept.items()))
+
+    best = max(slots.items(), key=lambda kv: len(kv[1]))
+    return {best[0]: best[1]}
+
+
+def by_slot(records: list[dict]) -> dict[tuple[str, str], list[dict]]:
+    """(코트, 개방 시각)별로 기록을 묶는다. 예측과 캘린더의 기본 단위."""
+    result: dict[tuple[str, str], list[dict]] = {}
+    for place, group in by_place(records).items():
+        for time, rows in split_slots(group).items():
+            result[(place, time)] = rows
+    return dict(sorted(result.items()))
 
 
 def by_place(records: list[dict]) -> dict[str, list[dict]]:
@@ -163,8 +207,10 @@ def upcoming(records: list[dict], now: dt.datetime | None = None,
     limit = now + dt.timedelta(days=horizon_days)
     results = []
 
-    for place, group in sorted(by_place(records).items()):
+    for (place, _time), group in by_slot(records).items():
         pattern = infer_pattern(group)
+        if not pattern.get("schedulable"):
+            continue
 
         future = sorted(
             (o for o in (_parse(r["rcpt_open_at"]) for r in group) if o and o > now)

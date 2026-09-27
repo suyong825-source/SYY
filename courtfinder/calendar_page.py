@@ -34,7 +34,7 @@ def build_payload(records: list[dict], horizon_days: int = 100) -> dict:
     ]
 
     patterns = []
-    for place, group in sorted(predict.by_place(records).items()):
+    for (place, _time), group in predict.by_slot(records).items():
         pattern = predict.infer_pattern(group)
         patterns.append({
             "place": place,

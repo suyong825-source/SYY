@@ -391,3 +391,74 @@ def test_uid_is_stable_for_the_same_opening():
     when = dtm.datetime(2026, 10, 25, 7, 0, tzinfo=predict.KST)
     assert ics._uid("신도림", when) == ics._uid("신도림", when)
     assert ics._uid("신도림", when) != ics._uid("장충", when)
+
+
+# ── 코트 안에서 개방 시각이 갈리는 경우 ─────────────────────────
+def test_split_slots_drops_a_lone_outlier_time():
+    from courtfinder import predict
+
+    # 한남테니스장 실제 사례: 20건 중 19건이 09:00, 1건만 09:02로 등록돼 있었다
+    group = [_rec("한남", "2026-09-15T09:00", "2026-09-16", "2026-09-30", f"S{i}")
+             for i in range(19)]
+    group.append(_rec("한남", "2026-09-15T09:02", "2026-09-16", "2026-09-30", "S99"))
+
+    slots = predict.split_slots(group)
+    assert list(slots) == ["09:00"]
+    assert len(slots["09:00"]) == 19
+
+
+def test_split_slots_keeps_two_real_opening_times():
+    from courtfinder import predict
+
+    # 정릉테니스장 실제 사례: 코트마다 10:00과 12:00으로 갈린다
+    group = [_rec("정릉", "2026-09-25T10:00", "2026-10-01", "2026-10-22", f"A{i}")
+             for i in range(3)]
+    group += [_rec("정릉", "2026-09-25T12:00", "2026-10-01", "2026-10-29", f"B{i}")
+              for i in range(4)]
+    assert sorted(predict.split_slots(group)) == ["10:00", "12:00"]
+
+
+def test_split_slots_keeps_the_best_when_nothing_qualifies():
+    from courtfinder import predict
+
+    group = [_rec("X", "2026-09-25T07:00", "2026-10-01", "2026-10-31", "A")]
+    assert list(predict.split_slots(group)) == ["07:00"]
+
+
+def test_prediction_ignores_the_outlier_time():
+    import datetime as dtm
+
+    from courtfinder import predict
+
+    group = [_rec("한남", "2026-08-31T09:00", "2026-09-01", "2026-09-15", f"P{i}")
+             for i in range(9)]
+    group += [_rec("한남", "2026-09-15T09:00", "2026-09-16", "2026-09-30", f"Q{i}")
+              for i in range(9)]
+    group.append(_rec("한남", "2026-09-15T09:02", "2026-09-16", "2026-09-30", "R"))
+
+    slot = predict.split_slots(group)["09:00"]
+    pattern = predict.infer_pattern(slot)
+    nxt = predict.predict_next(pattern, dtm.datetime(2026, 9, 16, tzinfo=predict.KST))
+    # 09:02가 아니라 09:00 기준으로 예측돼야 한다
+    assert nxt.strftime("%H:%M") == "09:00"
+
+
+def test_by_slot_splits_one_venue_into_its_times():
+    from courtfinder import predict
+
+    records = [_rec("정릉", "2026-09-25T10:00", "2026-10-01", "2026-10-22", f"A{i}")
+               for i in range(3)]
+    records += [_rec("정릉", "2026-09-25T12:00", "2026-10-01", "2026-10-29", f"B{i}")
+                for i in range(4)]
+    assert sorted(predict.by_slot(records)) == [("정릉", "10:00"), ("정릉", "12:00")]
+
+
+def test_month_long_round_that_is_not_a_full_month_is_still_monthly():
+    from courtfinder import predict
+
+    # 22일치 회차가 '상시'로 새어나가지 않아야 한다
+    pattern = predict.infer_pattern(
+        [_rec("정릉", "2026-09-25T10:00", "2026-10-01", "2026-10-22")]
+    )
+    assert pattern["cadence"] == "monthly"
+    assert pattern["schedulable"] is True
