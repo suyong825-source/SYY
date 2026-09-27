@@ -241,13 +241,31 @@ def test_predict_next_adds_one_month():
     assert nxt.strftime("%Y-%m-%d %H:%M") == "2026-10-25 07:00"
 
 
-def test_predict_next_returns_none_without_cadence():
+def test_standing_reservations_are_not_scheduled():
     import datetime as dtm
 
     from courtfinder import predict
 
-    pattern = predict.infer_pattern([_rec("X", "2026-09-25T07:00", "2026-10-01", "2026-10-03")])
+    # 이용기간이 1년짜리면 '다음 회차'라는 개념이 없다
+    pattern = predict.infer_pattern([_rec("탄천", "2026-09-25T14:00", "2026-01-01", "2026-12-31")])
+    assert pattern["cadence"] == "standing"
+    assert pattern["schedulable"] is False
     assert predict.predict_next(pattern, dtm.datetime(2026, 9, 26, tzinfo=predict.KST)) is None
+
+
+def test_weekly_cadence_steps_seven_days():
+    import datetime as dtm
+
+    from courtfinder import predict
+
+    records = [
+        _rec("난우", "2026-09-02T15:00", "2026-09-07", "2026-09-13"),
+        _rec("난우", "2026-09-09T15:00", "2026-09-14", "2026-09-20"),
+    ]
+    pattern = predict.infer_pattern(records)
+    assert pattern["cadence"] == "weekly"
+    nxt = predict.predict_next(pattern, dtm.datetime(2026, 9, 10, tzinfo=predict.KST))
+    assert nxt.strftime("%Y-%m-%d %H:%M") == "2026-09-16 15:00"
 
 
 def test_upcoming_prefers_confirmed_over_predicted():

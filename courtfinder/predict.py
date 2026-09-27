@@ -13,8 +13,18 @@ from zoneinfo import ZoneInfo
 KST = ZoneInfo("Asia/Seoul")
 
 # 이용기간 길이로 회차 주기를 가른다
+_WEEKLY = range(1, 10)        # 9일 이하 → 주 단위 회차
 _HALF_MONTH = range(10, 20)   # 10~19일 → 반달 회차 (1~15일 / 16~31일)
-_MONTHLY = range(25, 40)      # 25일 이상 → 월 단위 회차
+_MONTHLY = range(25, 40)      # 25~39일 → 월 단위 회차
+# 40일을 넘으면 회차가 아니라 연간·상시 접수로 본다 (예: 1년짜리 이용기간)
+
+CADENCE_LABEL = {
+    "weekly": "주 단위",
+    "half-monthly": "반달 단위",
+    "monthly": "월 단위",
+    "standing": "상시·장기",
+    "unknown": "판정 불가",
+}
 
 
 def _parse(value: str) -> dt.datetime | None:
@@ -65,12 +75,17 @@ def infer_pattern(records: list[dict]) -> dict:
             spans.append((end - start).days + 1)
 
     cadence = "unknown"
+    typical_span = None
     if spans:
-        typical = Counter(spans).most_common(1)[0][0]
-        if typical in _HALF_MONTH:
+        typical_span = Counter(spans).most_common(1)[0][0]
+        if typical_span in _WEEKLY:
+            cadence = "weekly"
+        elif typical_span in _HALF_MONTH:
             cadence = "half-monthly"
-        elif typical in _MONTHLY:
+        elif typical_span in _MONTHLY:
             cadence = "monthly"
+        else:
+            cadence = "standing"
 
     leads = []
     for record in records:
@@ -81,9 +96,12 @@ def infer_pattern(records: list[dict]) -> dict:
     # 회차(서로 다른 개방 일시)가 몇 번 관찰됐는지가 진짜 표본 수다
     rounds = len({o.strftime("%Y-%m-%d %H:%M") for o in opens})
 
+    open_days = sorted(days)
     return {
         "samples": len(opens),
         "rounds": rounds,
+        "span_days": typical_span,
+        "open_days": open_days,
         "open_time": times.most_common(1)[0][0],
         "open_time_counts": dict(times),
         "open_day": days.most_common(1)[0][0],
@@ -91,7 +109,10 @@ def infer_pattern(records: list[dict]) -> dict:
         "cadence": cadence,
         "lead_days": Counter(leads).most_common(1)[0][0] if leads else None,
         "last_open": max(opens).strftime("%Y-%m-%dT%H:%M"),
-        "confident": rounds >= 2 and cadence != "unknown",
+        "lead_spread": sorted(Counter(leads)) if leads else [],
+        # 상시·장기 접수는 '다음 회차'라는 개념이 없어 예측 대상이 아니다
+        "schedulable": cadence in ("weekly", "half-monthly", "monthly"),
+        "confident": rounds >= 2 and cadence in ("weekly", "half-monthly", "monthly"),
     }
 
 
@@ -117,6 +138,8 @@ def predict_next(pattern: dict, after: dt.datetime) -> dt.datetime | None:
         step = lambda d: _add_month(d.date(), 1)
     elif cadence == "half-monthly":
         step = lambda d: d.date() + dt.timedelta(days=15)
+    elif cadence == "weekly":
+        step = lambda d: d.date() + dt.timedelta(days=7)
     else:
         return None
 
