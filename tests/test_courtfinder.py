@@ -299,3 +299,95 @@ def test_alarm_message_flags_a_prediction():
     text = predict.alarm_message(entry)
     assert "신도림테니스장" in text and "07:00" in text and "추정" in text
     assert "추정" not in predict.alarm_message(dict(entry, kind="confirmed"))
+
+
+# ── ICS 구독 파일 ──────────────────────────────────────────────
+def _ics_records():
+    return [
+        _rec("신도림테니스장", "2026-08-25T07:00", "2026-09-01", "2026-09-30", "A"),
+        _rec("신도림테니스장", "2026-09-25T07:00", "2026-10-01", "2026-10-31", "B"),
+        _rec("탄천물재생센터", "2026-09-25T14:00", "2026-01-01", "2026-12-31", "C"),
+    ]
+
+
+def _ics_now():
+    import datetime as dtm
+
+    from courtfinder import predict
+
+    return dtm.datetime(2026, 9, 26, 12, 0, tzinfo=predict.KST)
+
+
+def test_series_skips_standing_reservations():
+    from courtfinder import ics
+
+    events = ics.series(_ics_records(), now=_ics_now(), horizon_days=90)
+    assert {e["place"] for e in events} == {"신도림테니스장"}
+
+
+def test_series_generates_several_future_rounds():
+    from courtfinder import ics
+
+    events = ics.series(_ics_records(), now=_ics_now(), horizon_days=90)
+    opens = [e["opens_at"].strftime("%Y-%m-%d %H:%M") for e in events]
+    assert opens == ["2026-10-25 07:00", "2026-11-25 07:00", "2026-12-25 07:00"]
+    assert all(e["kind"] == "predicted" for e in events)
+
+
+def test_confirmed_posting_is_not_duplicated_by_a_prediction():
+    from courtfinder import ics
+
+    records = _ics_records() + [
+        _rec("삼청테니스장", "2026-08-20T06:00", "2026-09-01", "2026-09-30", "D"),
+        _rec("삼청테니스장", "2026-10-20T06:00", "2026-11-01", "2026-11-30", "E"),
+    ]
+    events = [e for e in ics.series(records, now=_ics_now(), horizon_days=60)
+              if e["place"] == "삼청테니스장"]
+    stamps = [e["opens_at"].strftime("%Y-%m-%d %H:%M") for e in events]
+    assert stamps.count("2026-10-20 06:00") == 1
+    assert events[0]["kind"] == "confirmed"
+
+
+def test_render_is_wellformed_and_carries_alarms():
+    from courtfinder import ics
+
+    text = ics.render(_ics_records(), now=_ics_now(), horizon_days=90)
+    assert text.startswith("BEGIN:VCALENDAR\r\n")
+    assert text.endswith("END:VCALENDAR\r\n")
+    assert text.count("BEGIN:VEVENT") == text.count("END:VEVENT") == 3
+    assert text.count("TRIGGER:-PT10M") == 3
+    assert "X-WR-CALNAME:서울 테니스장 예약 오픈" in text
+    # 개방 07:00 KST == 22:00Z 전날
+    assert "DTSTART:20261024T220000Z" in text
+
+
+def test_render_honours_a_custom_alarm_offset():
+    from courtfinder import ics
+
+    text = ics.render(_ics_records(), now=_ics_now(), minutes_before=30)
+    assert "TRIGGER:-PT30M" in text
+    assert "30분 뒤 열립니다" in text
+
+
+def test_every_line_fits_the_ics_octet_limit():
+    from courtfinder import ics
+
+    text = ics.render(_ics_records(), now=_ics_now())
+    assert all(len(line.encode("utf-8")) <= 75 for line in text.split("\r\n"))
+
+
+def test_text_escaping_protects_separators():
+    from courtfinder import ics
+
+    assert ics._escape("a,b;c") == "a" + chr(92) + ",b" + chr(92) + ";c"
+    assert ics._escape("줄1\n줄2") == "줄1\\n줄2"
+
+
+def test_uid_is_stable_for_the_same_opening():
+    import datetime as dtm
+
+    from courtfinder import ics, predict
+
+    when = dtm.datetime(2026, 10, 25, 7, 0, tzinfo=predict.KST)
+    assert ics._uid("신도림", when) == ics._uid("신도림", when)
+    assert ics._uid("신도림", when) != ics._uid("장충", when)

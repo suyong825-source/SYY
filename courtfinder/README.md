@@ -93,3 +93,33 @@ courtfinder --details --upcoming --minutes 15   # 알람을 15분 전으로
 
 `회차` 열은 그 코트에서 서로 다른 개방 시점을 몇 번 관찰했는지입니다.
 1이면 주기를 아직 검증하지 못한 상태라 추정을 믿기 이릅니다.
+
+
+## 바탕화면 캘린더 구독 (.ics)
+
+```bash
+courtfinder --offline --ics          # tennis-openings.ics 생성
+courtfinder --offline --ics --minutes 15 --horizon 120
+```
+
+생성된 `.ics`를 저장소에 커밋하면 아래 주소로 구독할 수 있습니다.
+
+```
+https://raw.githubusercontent.com/suyong825-source/SYY/claude/what-can-we-do-here-qwhmlz/tennis-openings.ics
+```
+
+캘린더 앱(맥 캘린더, Outlook, 구글 캘린더, 아이폰)에서 **URL 구독**으로 추가하면
+바탕화면·휴대폰 캘린더에 그대로 뜨고, 파일이 갱신되면 앱이 알아서 다시 받아갑니다.
+각 일정에는 `VALARM`으로 **10분 전 알람**이 들어 있어 캘린더 앱이 직접 알림을 띄웁니다.
+
+상시·장기 접수(이용기간 40일 초과)는 '개방일'이라는 개념이 없어 캘린더에서 제외합니다.
+
+### 용어: 리드(lead)
+
+접수가 열리는 날과 **이용이 시작되는 날** 사이의 간격입니다.
+
+| 리드 | 뜻 |
+|---|---|
+| 6일 전 | 10/1부터 쓸 코트를 9/25에 연다 |
+| 당일 | 10/1 코트를 10/1 00:00에 연다 (한강공원 5곳) |
+| 16일 전 | 다음 달 코트를 보름 전에 미리 연다 (월드컵공원, 인재개발원) |

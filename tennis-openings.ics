@@ -1,0 +1,1981 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//courtfinder//Seoul Tennis Openings//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:서울 테니스장 예약 오픈
+X-WR-CALDESC:서울시 공공서비스예약 테니스장의 접수 개방
+  일정. 확정은 사이트 공고\, 추정은 과거 패턴 계산값.
+X-WR-TIMEZONE:Asia/Seoul
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:6d1ce5973ef3b0e2b9f2@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20260929T030000Z
+DTEND:20260929T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-09-29 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:757eeb0c254572f62e57@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20260930T000200Z
+DTEND:20260930T001700Z
+SUMMARY:🎾 한남테니스장 예약 오픈 (추정)
+DESCRIPTION:한남테니스장 (용산구)\n접수 개방 2026-09-30 09:02
+  (KST)\n주기: 반달 단위 15일치\n이용 시작 1일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:한남테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:한남테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7240fa0270fe03050ced@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20260930T110000Z
+DTEND:20260930T111500Z
+SUMMARY:🎾 뚝섬 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:뚝섬 한강공원 테니스장 (광진구)\n접수 개방 20
+ 26-09-30 20:00 (KST)\n주기: 월 단위 30일치\n이용 시작 1일 전
+ 에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추
+ 정 — 실제와 다를 수 있습니다
+LOCATION:뚝섬 한강공원 테니스장 광진구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:뚝섬 한강공원 테니스장 예약창이 10분 뒤 열립
+ 니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f643bf39378b2beea9c4@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20260930T150000Z
+DTEND:20260930T151500Z
+SUMMARY:🎾 광나루 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:광나루 한강공원 테니스장 (강동구)\n접수 개방
+  2026-10-01 00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당
+ 일에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 
+ 추정 — 실제와 다를 수 있습니다
+LOCATION:광나루 한강공원 테니스장 강동구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:광나루 한강공원 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7d8531c18a21b2a2ce9c@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20260930T150000Z
+DTEND:20260930T151500Z
+SUMMARY:🎾 난지한강테니스장 예약 오픈 (추정)
+DESCRIPTION:난지한강테니스장 (마포구)\n접수 개방 2026-10-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:난지한강테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:난지한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4cc0cdd6cf056cced330@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20260930T150000Z
+DTEND:20260930T151500Z
+SUMMARY:🎾 망원한강테니스장 예약 오픈 (추정)
+DESCRIPTION:망원한강테니스장 (마포구)\n접수 개방 2026-10-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:망원한강테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:망원한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:48986eb2039e73a262cc@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20260930T150000Z
+DTEND:20260930T151500Z
+SUMMARY:🎾 이촌 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:이촌 한강공원 테니스장 (용산구)\n접수 개방 20
+ 26-10-01 00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일
+ 에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추
+ 정 — 실제와 다를 수 있습니다
+LOCATION:이촌 한강공원 테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:이촌 한강공원 테니스장 예약창이 10분 뒤 열립
+ 니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7dbe6d32a0159a5d9934@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20260930T150000Z
+DTEND:20260930T151500Z
+SUMMARY:🎾 잠원한강테니스장 예약 오픈 (추정)
+DESCRIPTION:잠원한강테니스장 (서초구)\n접수 개방 2026-10-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:잠원한강테니스장 서초구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:잠원한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:fb030b94a9a8ecf59f72@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261006T030000Z
+DTEND:20261006T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-10-06 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:61ec0402c983c7432df3@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261009T150000Z
+DTEND:20261009T151500Z
+SUMMARY:🎾 가좌테니스장 예약 오픈 (추정)
+DESCRIPTION:가좌테니스장 (서대문구)\n접수 개방 2026-10-10 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:가좌테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:가좌테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:997e9fa02c1cbe288971@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261009T150000Z
+DTEND:20261009T151500Z
+SUMMARY:🎾 남부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:남부도로사업소 테니스장 (영등포구)\n접수 개
+ 방 2026-10-10 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작
+  6일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:남부도로사업소 테니스장 영등포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:남부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f9aaf39cd4a5b346b3ed@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261009T150000Z
+DTEND:20261009T151500Z
+SUMMARY:🎾 동부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:동부도로사업소 테니스장 (강남구)\n접수 개방 
+ 2026-10-10 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6
+ 일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:동부도로사업소 테니스장 강남구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:동부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9c75f65c5e6753acd7b8@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261009T150000Z
+DTEND:20261009T151500Z
+SUMMARY:🎾 홍은테니스장 예약 오픈 (추정)
+DESCRIPTION:홍은테니스장 (서대문구)\n접수 개방 2026-10-10 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:홍은테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:홍은테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:48b9a7d8530e4849378c@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261010T010000Z
+DTEND:20261010T011500Z
+SUMMARY:🎾 장충테니스장 예약 오픈 (추정)
+DESCRIPTION:장충테니스장 (중구)\n접수 개방 2026-10-10 10:00 (K
+ ST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:장충테니스장 중구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:장충테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:627586583f59d6ec7fc8@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261013T030000Z
+DTEND:20261013T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-10-13 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0c30dfa3e8d06192ff5e@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261015T000200Z
+DTEND:20261015T001700Z
+SUMMARY:🎾 한남테니스장 예약 오픈 (추정)
+DESCRIPTION:한남테니스장 (용산구)\n접수 개방 2026-10-15 09:02
+  (KST)\n주기: 반달 단위 15일치\n이용 시작 1일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:한남테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:한남테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b3105997c4a77bd30447@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261015T010000Z
+DTEND:20261015T011500Z
+SUMMARY:🎾 인재개발원 테니스장 예약 오픈 (추정)
+DESCRIPTION:인재개발원 테니스장 (서초구)\n접수 개방 2026-1
+ 0-15 10:00 (KST)\n주기: 월 단위 31일치\n이용 시작 16일 전에
+  열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:인재개발원 테니스장 서초구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:인재개발원 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6bb0f93462279bbbbbb4@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261015T040000Z
+DTEND:20261015T041500Z
+SUMMARY:🎾 월드컵공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:월드컵공원 테니스장 (마포구)\n접수 개방 2026-1
+ 0-15 13:00 (KST)\n주기: 월 단위 31일치\n이용 시작 16일 전에
+  열립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:월드컵공원 테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:월드컵공원 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5267ea7b28d09ed11a27@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261019T210000Z
+DTEND:20261019T211500Z
+SUMMARY:🎾 삼청테니스장 예약 오픈
+DESCRIPTION:삼청테니스장 (종로구)\n접수 개방 2026-10-20 06:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 12일 전에 열립니
+ 다\n근거: 사이트에 올라온 공고 (확정)
+LOCATION:삼청테니스장 종로구
+STATUS:CONFIRMED
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:삼청테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0baf277f98083babd2de@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261020T030000Z
+DTEND:20261020T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-10-20 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5ed27432a7f79efcae5d@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261023T003000Z
+DTEND:20261023T004500Z
+SUMMARY:🎾 선우공원 예약 오픈 (추정)
+DESCRIPTION:선우공원 (관악구)\n접수 개방 2026-10-23 09:30 (KST)
+ \n주기: 월 단위 31일치\n이용 시작 8일 전에 열립니다\n
+ 근거: 과거 4회 관찰 패턴으로 계산한 추정 — 실제와 
+ 다를 수 있습니다
+LOCATION:선우공원 관악구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:선우공원 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f65df553925644ae5c50@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261024T000000Z
+DTEND:20261024T001500Z
+SUMMARY:🎾 독산테니스장 예약 오픈 (추정)
+DESCRIPTION:독산테니스장 (금천구)\n접수 개방 2026-10-24 09:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 7일 전에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:독산테니스장 금천구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:독산테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9ba6ae38ba9b1e993062@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261024T150000Z
+DTEND:20261024T151500Z
+SUMMARY:🎾 가좌테니스장 예약 오픈 (추정)
+DESCRIPTION:가좌테니스장 (서대문구)\n접수 개방 2026-10-25 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:가좌테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:가좌테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:037597d11e9a7fdf1c68@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261024T150000Z
+DTEND:20261024T151500Z
+SUMMARY:🎾 남부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:남부도로사업소 테니스장 (영등포구)\n접수 개
+ 방 2026-10-25 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작
+  6일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:남부도로사업소 테니스장 영등포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:남부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f04e884ec9de6a64292d@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261024T150000Z
+DTEND:20261024T151500Z
+SUMMARY:🎾 동부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:동부도로사업소 테니스장 (강남구)\n접수 개방 
+ 2026-10-25 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6
+ 일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:동부도로사업소 테니스장 강남구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:동부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1c3420d94a8748f8f660@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261024T150000Z
+DTEND:20261024T151500Z
+SUMMARY:🎾 홍은테니스장 예약 오픈 (추정)
+DESCRIPTION:홍은테니스장 (서대문구)\n접수 개방 2026-10-25 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:홍은테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:홍은테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:79199f9755d227c75b68@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261024T220000Z
+DTEND:20261024T221500Z
+SUMMARY:🎾 계남근린공원 예약 오픈 (추정)
+DESCRIPTION:계남근린공원 (구로구)\n접수 개방 2026-10-25 07:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:계남근린공원 구로구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:계남근린공원 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c2208a128619a9b5e148@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261024T220000Z
+DTEND:20261024T221500Z
+SUMMARY:🎾 신도림테니스장 예약 오픈 (추정)
+DESCRIPTION:신도림테니스장 (구로구)\n접수 개방 2026-10-25 07
+ :00 (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:신도림테니스장 구로구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:신도림테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:351e98b0afb413650330@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261025T010000Z
+DTEND:20261025T011500Z
+SUMMARY:🎾 장충테니스장 예약 오픈 (추정)
+DESCRIPTION:장충테니스장 (중구)\n접수 개방 2026-10-25 10:00 (K
+ ST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:장충테니스장 중구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:장충테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:63a4f919d55efe78bec0@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261025T013000Z
+DTEND:20261025T014500Z
+SUMMARY:🎾 월곡테니스장 예약 오픈 (추정)
+DESCRIPTION:월곡테니스장 (성북구)\n접수 개방 2026-10-25 10:30
+  (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 5회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:월곡테니스장 성북구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:월곡테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4973e0fa230cb6cc26ce@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261025T030000Z
+DTEND:20261025T031500Z
+SUMMARY:🎾 정릉테니스장 예약 오픈 (추정)
+DESCRIPTION:정릉테니스장 (성북구)\n접수 개방 2026-10-25 12:00
+  (KST)\n주기: 월 단위 29일치\n이용 시작 7일 전에 열립니
+ 다\n근거: 과거 4회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:정릉테니스장 성북구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:정릉테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:309860fd6afcb913ede2@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261026T010000Z
+DTEND:20261026T011500Z
+SUMMARY:🎾 망원나들목 테니스장 예약 오픈 (추정)
+DESCRIPTION:망원나들목 테니스장 (마포구)\n접수 개방 2026-1
+ 0-26 10:00 (KST)\n주기: 월 단위 30일치\n이용 시작 6일 전에 
+ 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:망원나들목 테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:망원나들목 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c2fd94fc7e35f8fcdc62@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261027T030000Z
+DTEND:20261027T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-10-27 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4649068b2c6c69237002@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261030T000200Z
+DTEND:20261030T001700Z
+SUMMARY:🎾 한남테니스장 예약 오픈 (추정)
+DESCRIPTION:한남테니스장 (용산구)\n접수 개방 2026-10-30 09:02
+  (KST)\n주기: 반달 단위 15일치\n이용 시작 1일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:한남테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:한남테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0e3ca3259f33860d5c4a@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261030T110000Z
+DTEND:20261030T111500Z
+SUMMARY:🎾 뚝섬 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:뚝섬 한강공원 테니스장 (광진구)\n접수 개방 20
+ 26-10-30 20:00 (KST)\n주기: 월 단위 30일치\n이용 시작 1일 전
+ 에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추
+ 정 — 실제와 다를 수 있습니다
+LOCATION:뚝섬 한강공원 테니스장 광진구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:뚝섬 한강공원 테니스장 예약창이 10분 뒤 열립
+ 니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0233ecb28697830651d1@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261031T150000Z
+DTEND:20261031T151500Z
+SUMMARY:🎾 광나루 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:광나루 한강공원 테니스장 (강동구)\n접수 개방
+  2026-11-01 00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당
+ 일에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 
+ 추정 — 실제와 다를 수 있습니다
+LOCATION:광나루 한강공원 테니스장 강동구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:광나루 한강공원 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9470b08879486f49e300@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261031T150000Z
+DTEND:20261031T151500Z
+SUMMARY:🎾 난지한강테니스장 예약 오픈 (추정)
+DESCRIPTION:난지한강테니스장 (마포구)\n접수 개방 2026-11-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:난지한강테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:난지한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e7643cf82b69271cefef@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261031T150000Z
+DTEND:20261031T151500Z
+SUMMARY:🎾 망원한강테니스장 예약 오픈 (추정)
+DESCRIPTION:망원한강테니스장 (마포구)\n접수 개방 2026-11-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:망원한강테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:망원한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e203bc0de0b540268f4f@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261031T150000Z
+DTEND:20261031T151500Z
+SUMMARY:🎾 이촌 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:이촌 한강공원 테니스장 (용산구)\n접수 개방 20
+ 26-11-01 00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일
+ 에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추
+ 정 — 실제와 다를 수 있습니다
+LOCATION:이촌 한강공원 테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:이촌 한강공원 테니스장 예약창이 10분 뒤 열립
+ 니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6c48b1915423bc8465ac@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261031T150000Z
+DTEND:20261031T151500Z
+SUMMARY:🎾 잠원한강테니스장 예약 오픈 (추정)
+DESCRIPTION:잠원한강테니스장 (서초구)\n접수 개방 2026-11-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:잠원한강테니스장 서초구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:잠원한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:582c94f0e54592fc3b73@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261103T030000Z
+DTEND:20261103T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-11-03 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:9694d171679021b66edd@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261108T150000Z
+DTEND:20261108T151500Z
+SUMMARY:🎾 가좌테니스장 예약 오픈 (추정)
+DESCRIPTION:가좌테니스장 (서대문구)\n접수 개방 2026-11-09 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:가좌테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:가좌테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:277a0aaec8569675ad13@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261108T150000Z
+DTEND:20261108T151500Z
+SUMMARY:🎾 남부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:남부도로사업소 테니스장 (영등포구)\n접수 개
+ 방 2026-11-09 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작
+  6일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:남부도로사업소 테니스장 영등포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:남부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:6ee4ac9d15d3a04b625a@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261108T150000Z
+DTEND:20261108T151500Z
+SUMMARY:🎾 동부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:동부도로사업소 테니스장 (강남구)\n접수 개방 
+ 2026-11-09 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6
+ 일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:동부도로사업소 테니스장 강남구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:동부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c34a3ef693a9ecfae7d4@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261108T150000Z
+DTEND:20261108T151500Z
+SUMMARY:🎾 홍은테니스장 예약 오픈 (추정)
+DESCRIPTION:홍은테니스장 (서대문구)\n접수 개방 2026-11-09 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:홍은테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:홍은테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:13df7059cbc1f7ae9e81@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261109T010000Z
+DTEND:20261109T011500Z
+SUMMARY:🎾 장충테니스장 예약 오픈 (추정)
+DESCRIPTION:장충테니스장 (중구)\n접수 개방 2026-11-09 10:00 (K
+ ST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:장충테니스장 중구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:장충테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7006fda9fb4750f3179b@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261110T030000Z
+DTEND:20261110T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-11-10 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e2db5b876dc039a899fe@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261114T000200Z
+DTEND:20261114T001700Z
+SUMMARY:🎾 한남테니스장 예약 오픈 (추정)
+DESCRIPTION:한남테니스장 (용산구)\n접수 개방 2026-11-14 09:02
+  (KST)\n주기: 반달 단위 15일치\n이용 시작 1일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:한남테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:한남테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a5abdac847a57f731a11@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261115T010000Z
+DTEND:20261115T011500Z
+SUMMARY:🎾 인재개발원 테니스장 예약 오픈 (추정)
+DESCRIPTION:인재개발원 테니스장 (서초구)\n접수 개방 2026-1
+ 1-15 10:00 (KST)\n주기: 월 단위 31일치\n이용 시작 16일 전에
+  열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:인재개발원 테니스장 서초구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:인재개발원 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e31e122f011fce8630cb@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261115T040000Z
+DTEND:20261115T041500Z
+SUMMARY:🎾 월드컵공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:월드컵공원 테니스장 (마포구)\n접수 개방 2026-1
+ 1-15 13:00 (KST)\n주기: 월 단위 31일치\n이용 시작 16일 전에
+  열립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:월드컵공원 테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:월드컵공원 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4cac77f6fea122711ced@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261117T030000Z
+DTEND:20261117T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-11-17 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a5f7accb37e09722c292@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261119T210000Z
+DTEND:20261119T211500Z
+SUMMARY:🎾 삼청테니스장 예약 오픈 (추정)
+DESCRIPTION:삼청테니스장 (종로구)\n접수 개방 2026-11-20 06:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 12일 전에 열립니
+ 다\n근거: 과거 10회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:삼청테니스장 종로구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:삼청테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:37abe24ace4f23fed9d5@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261123T003000Z
+DTEND:20261123T004500Z
+SUMMARY:🎾 선우공원 예약 오픈 (추정)
+DESCRIPTION:선우공원 (관악구)\n접수 개방 2026-11-23 09:30 (KST)
+ \n주기: 월 단위 31일치\n이용 시작 8일 전에 열립니다\n
+ 근거: 과거 4회 관찰 패턴으로 계산한 추정 — 실제와 
+ 다를 수 있습니다
+LOCATION:선우공원 관악구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:선우공원 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b204e857f2d4812bfcb3@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261123T150000Z
+DTEND:20261123T151500Z
+SUMMARY:🎾 가좌테니스장 예약 오픈 (추정)
+DESCRIPTION:가좌테니스장 (서대문구)\n접수 개방 2026-11-24 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:가좌테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:가좌테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:443c4ab7f879f239af20@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261123T150000Z
+DTEND:20261123T151500Z
+SUMMARY:🎾 남부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:남부도로사업소 테니스장 (영등포구)\n접수 개
+ 방 2026-11-24 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작
+  6일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:남부도로사업소 테니스장 영등포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:남부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:dd6881073aafdf7f4ce9@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261123T150000Z
+DTEND:20261123T151500Z
+SUMMARY:🎾 동부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:동부도로사업소 테니스장 (강남구)\n접수 개방 
+ 2026-11-24 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6
+ 일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:동부도로사업소 테니스장 강남구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:동부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ba016f68ad2d8a571153@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261123T150000Z
+DTEND:20261123T151500Z
+SUMMARY:🎾 홍은테니스장 예약 오픈 (추정)
+DESCRIPTION:홍은테니스장 (서대문구)\n접수 개방 2026-11-24 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:홍은테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:홍은테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:72718ec065de01902edc@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261124T000000Z
+DTEND:20261124T001500Z
+SUMMARY:🎾 독산테니스장 예약 오픈 (추정)
+DESCRIPTION:독산테니스장 (금천구)\n접수 개방 2026-11-24 09:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 7일 전에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:독산테니스장 금천구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:독산테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:530dcedcb2414fbf432b@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261124T010000Z
+DTEND:20261124T011500Z
+SUMMARY:🎾 장충테니스장 예약 오픈 (추정)
+DESCRIPTION:장충테니스장 (중구)\n접수 개방 2026-11-24 10:00 (K
+ ST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:장충테니스장 중구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:장충테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c906aab3daaff0b517d6@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261124T030000Z
+DTEND:20261124T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-11-24 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e8e75b67839d0144e39c@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261124T220000Z
+DTEND:20261124T221500Z
+SUMMARY:🎾 계남근린공원 예약 오픈 (추정)
+DESCRIPTION:계남근린공원 (구로구)\n접수 개방 2026-11-25 07:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:계남근린공원 구로구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:계남근린공원 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:f98bbbf62d399f17e399@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261124T220000Z
+DTEND:20261124T221500Z
+SUMMARY:🎾 신도림테니스장 예약 오픈 (추정)
+DESCRIPTION:신도림테니스장 (구로구)\n접수 개방 2026-11-25 07
+ :00 (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:신도림테니스장 구로구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:신도림테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ea0b8b7bad0148d078aa@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261125T013000Z
+DTEND:20261125T014500Z
+SUMMARY:🎾 월곡테니스장 예약 오픈 (추정)
+DESCRIPTION:월곡테니스장 (성북구)\n접수 개방 2026-11-25 10:30
+  (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 5회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:월곡테니스장 성북구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:월곡테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b5107b53a06c45c15ac1@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261125T030000Z
+DTEND:20261125T031500Z
+SUMMARY:🎾 정릉테니스장 예약 오픈 (추정)
+DESCRIPTION:정릉테니스장 (성북구)\n접수 개방 2026-11-25 12:00
+  (KST)\n주기: 월 단위 29일치\n이용 시작 7일 전에 열립니
+ 다\n근거: 과거 4회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:정릉테니스장 성북구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:정릉테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b51bd10ef07ee6609166@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261126T010000Z
+DTEND:20261126T011500Z
+SUMMARY:🎾 망원나들목 테니스장 예약 오픈 (추정)
+DESCRIPTION:망원나들목 테니스장 (마포구)\n접수 개방 2026-1
+ 1-26 10:00 (KST)\n주기: 월 단위 30일치\n이용 시작 6일 전에 
+ 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:망원나들목 테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:망원나들목 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b0a12aa3a206e89b6f4b@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261129T000200Z
+DTEND:20261129T001700Z
+SUMMARY:🎾 한남테니스장 예약 오픈 (추정)
+DESCRIPTION:한남테니스장 (용산구)\n접수 개방 2026-11-29 09:02
+  (KST)\n주기: 반달 단위 15일치\n이용 시작 1일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:한남테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:한남테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0d11fbe82c184b31b208@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261130T110000Z
+DTEND:20261130T111500Z
+SUMMARY:🎾 뚝섬 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:뚝섬 한강공원 테니스장 (광진구)\n접수 개방 20
+ 26-11-30 20:00 (KST)\n주기: 월 단위 30일치\n이용 시작 1일 전
+ 에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추
+ 정 — 실제와 다를 수 있습니다
+LOCATION:뚝섬 한강공원 테니스장 광진구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:뚝섬 한강공원 테니스장 예약창이 10분 뒤 열립
+ 니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:15977618066d58b18206@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261130T150000Z
+DTEND:20261130T151500Z
+SUMMARY:🎾 광나루 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:광나루 한강공원 테니스장 (강동구)\n접수 개방
+  2026-12-01 00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당
+ 일에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 
+ 추정 — 실제와 다를 수 있습니다
+LOCATION:광나루 한강공원 테니스장 강동구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:광나루 한강공원 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:e33157bb615cfd391861@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261130T150000Z
+DTEND:20261130T151500Z
+SUMMARY:🎾 난지한강테니스장 예약 오픈 (추정)
+DESCRIPTION:난지한강테니스장 (마포구)\n접수 개방 2026-12-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:난지한강테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:난지한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0393fba9aa4f2435cbba@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261130T150000Z
+DTEND:20261130T151500Z
+SUMMARY:🎾 망원한강테니스장 예약 오픈 (추정)
+DESCRIPTION:망원한강테니스장 (마포구)\n접수 개방 2026-12-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:망원한강테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:망원한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1eb6fa063e91a1811b1a@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261130T150000Z
+DTEND:20261130T151500Z
+SUMMARY:🎾 이촌 한강공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:이촌 한강공원 테니스장 (용산구)\n접수 개방 20
+ 26-12-01 00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일
+ 에 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추
+ 정 — 실제와 다를 수 있습니다
+LOCATION:이촌 한강공원 테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:이촌 한강공원 테니스장 예약창이 10분 뒤 열립
+ 니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:05695f8a129099880b95@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261130T150000Z
+DTEND:20261130T151500Z
+SUMMARY:🎾 잠원한강테니스장 예약 오픈 (추정)
+DESCRIPTION:잠원한강테니스장 (서초구)\n접수 개방 2026-12-01
+  00:00 (KST)\n주기: 월 단위 30일치\n이용 시작 당일에 열립
+ 니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:잠원한강테니스장 서초구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:잠원한강테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b415617c76c9d0b1c4e3@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261201T030000Z
+DTEND:20261201T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-12-01 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cbef166dd7bc675b753b@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261208T030000Z
+DTEND:20261208T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-12-08 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bb6f794872e3cbbefa9b@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261208T150000Z
+DTEND:20261208T151500Z
+SUMMARY:🎾 가좌테니스장 예약 오픈 (추정)
+DESCRIPTION:가좌테니스장 (서대문구)\n접수 개방 2026-12-09 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:가좌테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:가좌테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:73f0d2c4b1c794c0b032@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261208T150000Z
+DTEND:20261208T151500Z
+SUMMARY:🎾 남부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:남부도로사업소 테니스장 (영등포구)\n접수 개
+ 방 2026-12-09 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작
+  6일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:남부도로사업소 테니스장 영등포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:남부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:977251073841b8e4868a@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261208T150000Z
+DTEND:20261208T151500Z
+SUMMARY:🎾 동부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:동부도로사업소 테니스장 (강남구)\n접수 개방 
+ 2026-12-09 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6
+ 일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:동부도로사업소 테니스장 강남구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:동부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:12c363681df703dedec1@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261208T150000Z
+DTEND:20261208T151500Z
+SUMMARY:🎾 홍은테니스장 예약 오픈 (추정)
+DESCRIPTION:홍은테니스장 (서대문구)\n접수 개방 2026-12-09 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:홍은테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:홍은테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0056aa3c530f12a2932c@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261209T010000Z
+DTEND:20261209T011500Z
+SUMMARY:🎾 장충테니스장 예약 오픈 (추정)
+DESCRIPTION:장충테니스장 (중구)\n접수 개방 2026-12-09 10:00 (K
+ ST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:장충테니스장 중구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:장충테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:801254412386342213f5@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261214T000200Z
+DTEND:20261214T001700Z
+SUMMARY:🎾 한남테니스장 예약 오픈 (추정)
+DESCRIPTION:한남테니스장 (용산구)\n접수 개방 2026-12-14 09:02
+  (KST)\n주기: 반달 단위 15일치\n이용 시작 1일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:한남테니스장 용산구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:한남테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ab5fa6389cc66aea8e8a@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261215T010000Z
+DTEND:20261215T011500Z
+SUMMARY:🎾 인재개발원 테니스장 예약 오픈 (추정)
+DESCRIPTION:인재개발원 테니스장 (서초구)\n접수 개방 2026-1
+ 2-15 10:00 (KST)\n주기: 월 단위 31일치\n이용 시작 16일 전에
+  열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:인재개발원 테니스장 서초구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:인재개발원 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:023ff3e926cc0d58bf1c@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261215T030000Z
+DTEND:20261215T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-12-15 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7682657c709817a9a894@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261215T040000Z
+DTEND:20261215T041500Z
+SUMMARY:🎾 월드컵공원 테니스장 예약 오픈 (추정)
+DESCRIPTION:월드컵공원 테니스장 (마포구)\n접수 개방 2026-1
+ 2-15 13:00 (KST)\n주기: 월 단위 31일치\n이용 시작 16일 전에
+  열립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:월드컵공원 테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:월드컵공원 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a23813b0f6d8e6f0a10f@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261219T210000Z
+DTEND:20261219T211500Z
+SUMMARY:🎾 삼청테니스장 예약 오픈 (추정)
+DESCRIPTION:삼청테니스장 (종로구)\n접수 개방 2026-12-20 06:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 12일 전에 열립니
+ 다\n근거: 과거 10회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:삼청테니스장 종로구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:삼청테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3e7e4b6954f32cfefbf3@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261222T030000Z
+DTEND:20261222T031500Z
+SUMMARY:🎾 현저테니스장 예약 오픈 (추정)
+DESCRIPTION:현저테니스장 (서대문구)\n접수 개방 2026-12-22 12
+ :00 (KST)\n주기: 주 단위 6일치\n이용 시작 당일에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:현저테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:현저테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7783b8f6df129cb7a14b@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261223T003000Z
+DTEND:20261223T004500Z
+SUMMARY:🎾 선우공원 예약 오픈 (추정)
+DESCRIPTION:선우공원 (관악구)\n접수 개방 2026-12-23 09:30 (KST)
+ \n주기: 월 단위 31일치\n이용 시작 8일 전에 열립니다\n
+ 근거: 과거 4회 관찰 패턴으로 계산한 추정 — 실제와 
+ 다를 수 있습니다
+LOCATION:선우공원 관악구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:선우공원 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:01676155a2d221ec95d9@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261223T150000Z
+DTEND:20261223T151500Z
+SUMMARY:🎾 가좌테니스장 예약 오픈 (추정)
+DESCRIPTION:가좌테니스장 (서대문구)\n접수 개방 2026-12-24 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:가좌테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:가좌테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5d90db69c16fced46572@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261223T150000Z
+DTEND:20261223T151500Z
+SUMMARY:🎾 남부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:남부도로사업소 테니스장 (영등포구)\n접수 개
+ 방 2026-12-24 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작
+  6일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:남부도로사업소 테니스장 영등포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:남부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1e27465be17f8a9ed868@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261223T150000Z
+DTEND:20261223T151500Z
+SUMMARY:🎾 동부도로사업소 테니스장 예약 오픈 (추정)
+DESCRIPTION:동부도로사업소 테니스장 (강남구)\n접수 개방 
+ 2026-12-24 00:00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6
+ 일 전에 열립니다\n근거: 과거 2회 관찰 패턴으로 계산
+ 한 추정 — 실제와 다를 수 있습니다
+LOCATION:동부도로사업소 테니스장 강남구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:동부도로사업소 테니스장 예약창이 10분 뒤 열
+ 립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3c2e311e83b14cf227ee@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261223T150000Z
+DTEND:20261223T151500Z
+SUMMARY:🎾 홍은테니스장 예약 오픈 (추정)
+DESCRIPTION:홍은테니스장 (서대문구)\n접수 개방 2026-12-24 00
+ :00 (KST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열
+ 립니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 
+ 실제와 다를 수 있습니다
+LOCATION:홍은테니스장 서대문구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:홍은테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ba121ae0065ce83f325b@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261224T000000Z
+DTEND:20261224T001500Z
+SUMMARY:🎾 독산테니스장 예약 오픈 (추정)
+DESCRIPTION:독산테니스장 (금천구)\n접수 개방 2026-12-24 09:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 7일 전에 열립니
+ 다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:독산테니스장 금천구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:독산테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:a5dc693bd1881cb8da1e@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261224T010000Z
+DTEND:20261224T011500Z
+SUMMARY:🎾 장충테니스장 예약 오픈 (추정)
+DESCRIPTION:장충테니스장 (중구)\n접수 개방 2026-12-24 10:00 (K
+ ST)\n주기: 반달 단위 15일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:장충테니스장 중구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:장충테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:4a24b6cb4a19a27a1d58@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261224T220000Z
+DTEND:20261224T221500Z
+SUMMARY:🎾 계남근린공원 예약 오픈 (추정)
+DESCRIPTION:계남근린공원 (구로구)\n접수 개방 2026-12-25 07:00
+  (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:계남근린공원 구로구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:계남근린공원 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:5a9ba33d175493c9d62d@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261224T220000Z
+DTEND:20261224T221500Z
+SUMMARY:🎾 신도림테니스장 예약 오픈 (추정)
+DESCRIPTION:신도림테니스장 (구로구)\n접수 개방 2026-12-25 07
+ :00 (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립
+ 니다\n근거: 과거 2회 관찰 패턴으로 계산한 추정 — 실
+ 제와 다를 수 있습니다
+LOCATION:신도림테니스장 구로구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:신도림테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:25b9471492b7fc50eb8b@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261225T013000Z
+DTEND:20261225T014500Z
+SUMMARY:🎾 월곡테니스장 예약 오픈 (추정)
+DESCRIPTION:월곡테니스장 (성북구)\n접수 개방 2026-12-25 10:30
+  (KST)\n주기: 월 단위 31일치\n이용 시작 6일 전에 열립니
+ 다\n근거: 과거 5회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:월곡테니스장 성북구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:월곡테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3a501052c1bc1d183d56@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261225T030000Z
+DTEND:20261225T031500Z
+SUMMARY:🎾 정릉테니스장 예약 오픈 (추정)
+DESCRIPTION:정릉테니스장 (성북구)\n접수 개방 2026-12-25 12:00
+  (KST)\n주기: 월 단위 29일치\n이용 시작 7일 전에 열립니
+ 다\n근거: 과거 4회 관찰 패턴으로 계산한 추정 — 실제
+ 와 다를 수 있습니다
+LOCATION:정릉테니스장 성북구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:정릉테니스장 예약창이 10분 뒤 열립니다
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7fe59f8c38da9cfe5a08@courtfinder.local
+DTSTAMP:20260927T233556Z
+DTSTART:20261226T010000Z
+DTEND:20261226T011500Z
+SUMMARY:🎾 망원나들목 테니스장 예약 오픈 (추정)
+DESCRIPTION:망원나들목 테니스장 (마포구)\n접수 개방 2026-1
+ 2-26 10:00 (KST)\n주기: 월 단위 30일치\n이용 시작 6일 전에 
+ 열립니다\n근거: 과거 1회 관찰 패턴으로 계산한 추정 
+ — 실제와 다를 수 있습니다
+LOCATION:망원나들목 테니스장 마포구
+STATUS:TENTATIVE
+CATEGORIES:테니스장 접수
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:망원나들목 테니스장 예약창이 10분 뒤 열립니
+ 다
+END:VALARM
+END:VEVENT
+END:VCALENDAR

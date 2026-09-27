@@ -10,7 +10,7 @@ import time
 from pathlib import Path
 
 from . import __version__
-from . import history, predict
+from . import history, ics, predict
 from .fetch import FetchError, fetch_all, fetch_detail
 from .parser import Service, parse_detail
 from .render import render, summarize
@@ -50,6 +50,14 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--minutes", type=int, default=10, help="알람을 개방 몇 분 전에 둘지"
+    )
+    parser.add_argument(
+        "--ics", nargs="?", const="tennis-openings.ics", default=None,
+        metavar="경로",
+        help="캘린더 앱이 구독할 .ics 파일 생성 (기본 tennis-openings.ics)",
+    )
+    parser.add_argument(
+        "--horizon", type=int, default=90, help=".ics에 담을 기간(일)"
     )
     return parser
 
@@ -146,8 +154,24 @@ def main(argv: list[str] | None = None) -> int:
     if fresh:
         print(f"관찰 기록에 새 접수 건 {len(fresh)}건을 추가했습니다 → {hist_path}")
 
+    if args.ics:
+        records = history.load(hist_path)
+        ics_path = Path(args.ics)
+        ics_path.write_text(
+            ics.render(records, horizon_days=args.horizon, minutes_before=args.minutes),
+            encoding="utf-8", newline="",
+        )
+        stats = ics.summarize(records, horizon_days=args.horizon)
+        print(f"캘린더 생성: {ics_path}")
+        print(f"  일정 {stats['events']}건 (확정 {stats['confirmed']}), 코트 {stats['places']}곳")
+        if stats["first"]:
+            print(f"  {stats['first']} ~ {stats['last']}")
+
     if args.upcoming:
         _print_upcoming(history.load(hist_path), args.minutes)
+        return 0
+
+    if args.ics:
         return 0
 
     out_path.write_text(render(services, dt.datetime.now()), encoding="utf-8")

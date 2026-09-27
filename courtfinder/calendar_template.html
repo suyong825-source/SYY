@@ -1,0 +1,419 @@
+<title>테니스장 예약 오픈 캘린더</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root {
+    --paper:#F0F2EC; --surface:#FFFFFF; --surface-2:#E6EAE1;
+    --ink:#161C17; --ink-2:#4B554C; --ink-3:#7B857C;
+    --rule:#D5DBD1; --rule-soft:#E4E8E0;
+    --court:#2F6B4A; --court-soft:#DCEAE0;
+    --warn:#A8552A; --warn-soft:#F4E3D6;
+    --dim:#8A8F89;
+    --kr:"Noto Sans KR",system-ui,-apple-system,"Malgun Gothic",sans-serif;
+    --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:#101410; --surface:#181D18; --surface-2:#232923;
+      --ink:#E8EDE7; --ink-2:#AEB6AD; --ink-3:#7C857D;
+      --rule:#2E352E; --rule-soft:#232923;
+      --court:#6FC192; --court-soft:#1C2E23;
+      --warn:#D9915C; --warn-soft:#33251A; --dim:#6B726B;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:#101410; --surface:#181D18; --surface-2:#232923;
+    --ink:#E8EDE7; --ink-2:#AEB6AD; --ink-3:#7C857D;
+    --rule:#2E352E; --rule-soft:#232923;
+    --court:#6FC192; --court-soft:#1C2E23;
+    --warn:#D9915C; --warn-soft:#33251A; --dim:#6B726B;
+  }
+
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font-family:var(--kr); font-size:15px; line-height:1.6;
+         -webkit-text-size-adjust:100%; }
+  .wrap { max-width:980px; margin:0 auto; padding-inline:16px; padding-block:0 64px; }
+  :focus-visible { outline:2px solid var(--court); outline-offset:2px; }
+  a { color:var(--court); }
+
+  header { padding-block:30px 16px; }
+  .kicker { font-family:var(--mono); font-size:11px; letter-spacing:.12em;
+            text-transform:uppercase; color:var(--court); margin:0 0 8px; }
+  h1 { font-size:clamp(24px,5.4vw,33px); font-weight:700; letter-spacing:-.02em;
+       margin:0 0 10px; text-wrap:balance; }
+  .lede { color:var(--ink-2); margin:0 0 16px; font-size:14.5px; max-width:62ch; }
+  .meta { display:flex; flex-wrap:wrap; gap:6px 16px; font-family:var(--mono);
+          font-size:11.5px; color:var(--ink-3);
+          border-top:1px solid var(--rule); padding-top:12px; }
+  .meta b { color:var(--ink-2); font-weight:500; }
+
+  /* 구독 안내 */
+  .subscribe { background:var(--court-soft); border:1px solid var(--court);
+               border-radius:3px; padding:16px; margin-top:20px; }
+  .subscribe h2 { margin:0 0 10px; font-size:15px; font-weight:700; }
+  .feed { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:12px; }
+  .feed code { font-family:var(--mono); font-size:11.5px; background:var(--surface);
+               border:1px solid var(--rule); border-radius:2px; padding:8px 10px;
+               overflow-x:auto; white-space:nowrap; flex:1 1 260px; color:var(--ink); }
+  button { font-family:var(--kr); font-size:12.5px; font-weight:700; color:#fff;
+           background:var(--court); border:1px solid var(--court); border-radius:2px;
+           padding:9px 14px; cursor:pointer; white-space:nowrap; }
+  button:hover { filter:brightness(1.1); }
+  button.ghost { background:transparent; color:var(--ink-2); border-color:var(--rule);
+                 font-weight:400; }
+  .steps { margin:0; padding-left:1.1em; font-size:13.5px; color:var(--ink-2); }
+  .steps li { margin-bottom:4px; }
+  .steps b { color:var(--ink); }
+
+  section { margin-top:34px; }
+  .sec-head { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;
+              border-bottom:2px solid var(--ink); padding-bottom:7px; margin-bottom:16px; }
+  h2.sec { font-family:var(--kr); font-weight:700; font-size:18px; margin:0; flex:1; }
+  .sec-hint { font-family:var(--mono); font-size:11px; color:var(--ink-3); }
+
+  /* 월 그리드 */
+  .monthnav { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+  .monthnav h3 { margin:0; font-size:16px; font-weight:700; flex:1; }
+  .grid { display:grid; grid-template-columns:repeat(7,1fr); gap:1px;
+          background:var(--rule); border:1px solid var(--rule); }
+  .dow-head { background:var(--surface-2); text-align:center; padding:7px 0;
+              font-family:var(--mono); font-size:11px; color:var(--ink-3); }
+  .dow-head.sat { color:#3E7FA8; } .dow-head.sun { color:var(--warn); }
+  .cell { background:var(--surface); min-height:88px; padding:6px 6px 8px;
+          display:flex; flex-direction:column; gap:3px; }
+  .cell.pad { background:var(--surface-2); opacity:.5; }
+  .cell.today { box-shadow:inset 0 0 0 2px var(--court); }
+  .dnum { font-family:var(--mono); font-size:12px; color:var(--ink-3);
+          font-variant-numeric:tabular-nums; }
+  .cell.today .dnum { color:var(--court); font-weight:700; }
+  .ev { font-size:10.5px; line-height:1.35; padding:3px 5px; border-radius:2px;
+        background:var(--court-soft); color:var(--court); cursor:pointer;
+        border-left:2px solid var(--court); text-align:left; width:100%;
+        font-family:var(--kr); font-weight:500; }
+  .ev.pred { background:var(--surface-2); color:var(--ink-2);
+             border-left-color:var(--dim); border-left-style:dashed; font-weight:400; }
+  .ev .t { font-family:var(--mono); font-weight:600; }
+  .more { font-family:var(--mono); font-size:10px; color:var(--ink-3); }
+
+  @media (max-width:640px) {
+    .cell { min-height:66px; padding:4px; }
+    .ev { font-size:9.5px; padding:2px 3px; }
+  }
+
+  /* 목록 */
+  table { width:100%; border-collapse:collapse; font-size:13.5px; }
+  th { text-align:left; font-family:var(--mono); font-size:11px; font-weight:600;
+       color:var(--ink-3); letter-spacing:.05em; padding:7px 8px;
+       border-bottom:1px solid var(--rule); white-space:nowrap; }
+  td { padding:9px 8px; border-bottom:1px solid var(--rule-soft); vertical-align:top; }
+  td.mono { font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  tr:hover td { background:var(--surface); }
+  .pill { font-family:var(--mono); font-size:10px; padding:1px 6px; border-radius:2px;
+          white-space:nowrap; }
+  .pill.ok { background:var(--court); color:#fff; font-weight:700; }
+  .pill.guess { background:transparent; color:var(--dim); border:1px solid var(--rule); }
+  .pill.w { background:var(--warn-soft); color:var(--warn); font-weight:600; }
+  .pill.h { background:var(--court-soft); color:var(--court); font-weight:600; }
+  .pill.m { background:var(--surface-2); color:var(--ink-2); font-weight:600; }
+  .pill.s { background:transparent; color:var(--dim); border:1px dashed var(--rule); }
+  .tablewrap { overflow-x:auto; }
+
+  .note { margin-top:26px; border-left:2px solid var(--court); background:var(--court-soft);
+          padding:13px 15px; font-size:13px; line-height:1.75; color:var(--ink-2);
+          border-radius:0 3px 3px 0; }
+  .note b { color:var(--ink); }
+  .note + .note { margin-top:10px; }
+
+  footer { margin-top:34px; padding-top:14px; border-top:1px solid var(--rule);
+           font-family:var(--mono); font-size:11px; line-height:1.7; color:var(--ink-3); }
+
+  @media (prefers-reduced-motion:reduce) { * { transition:none !important; } }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <p class="kicker">Seoul Tennis · Booking Opens</p>
+    <h1>테니스장 예약 오픈 캘린더</h1>
+    <p class="lede">서울시 공공예약 테니스장 39곳의 <b>접수 개방 시각</b>을 모은 캘린더입니다. 실제 공고가 올라온 건은 <b>확정</b>, 과거 회차 패턴으로 계산한 건은 <b>추정</b>으로 구분했습니다.</p>
+    <p class="meta">
+      <span>갱신 <b>__GENERATED_AT__</b></span>
+      <span>일정 <b id="m-ev">-</b>건</span>
+      <span>확정 <b id="m-ok">-</b>건</span>
+      <span>코트 <b id="m-pl">-</b>곳</span>
+    </p>
+
+    <div class="subscribe">
+      <h2>📅 바탕화면 캘린더에 구독하기</h2>
+      <div class="feed">
+        <code id="feed-url">__FEED_URL__</code>
+        <button type="button" id="copy-btn">주소 복사</button>
+      </div>
+      <ol class="steps">
+        <li><b>맥 (캘린더 앱)</b> — 파일 → 새로운 캘린더 구독 → 위 주소 붙여넣기 → 자동 새로고침 <b>매일</b>로 설정</li>
+        <li><b>윈도우 (Outlook)</b> — 캘린더 추가 → 웹에서 구독 → 위 주소 붙여넣기</li>
+        <li><b>구글 캘린더</b> — 다른 캘린더 + → URL로 만들기 → 위 주소 붙여넣기 (휴대폰에도 같이 뜹니다)</li>
+        <li><b>아이폰</b> — 설정 → 캘린더 → 계정 → 계정 추가 → 기타 → 구독 캘린더 추가</li>
+      </ol>
+      <p style="margin:12px 0 0; font-size:13px; color:var(--ink-2);">각 일정에는 <b>10분 전 알람</b>이 들어 있어, 캘린더 앱이 알아서 알림을 띄웁니다. 매일 아침 감시가 새 공고를 찾으면 이 구독 주소의 내용도 함께 갱신됩니다.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <h2 class="sec">달력</h2>
+      <span class="sec-hint">실선 = 확정 · 점선 = 추정</span>
+    </div>
+    <div class="monthnav">
+      <button type="button" class="ghost" id="prev">‹ 이전달</button>
+      <h3 id="month-label">—</h3>
+      <button type="button" class="ghost" id="today-btn">이번달</button>
+      <button type="button" class="ghost" id="next">다음달 ›</button>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2 class="sec">다가오는 개방</h2>
+      <span class="sec-hint">가까운 순 20건</span>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>개방 시각</th><th>알람</th><th>코트</th><th>주기</th><th>근거</th><th></th></tr></thead>
+        <tbody id="next-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2 class="sec">코트별 개방 패턴</h2>
+      <span class="sec-hint">39곳 전체</span>
+    </div>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>코트</th><th>지역</th><th>주기</th><th>개방일</th><th>시각</th><th>이용기간</th><th>리드</th><th>관찰</th></tr></thead>
+        <tbody id="pat-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="note">
+    <b>리드</b> — 접수가 열리는 날과 실제 이용이 시작되는 날 사이의 간격입니다. <b>6일 전</b>이면 10월 1일부터 쓸 코트를 9월 25일에 연다는 뜻이고, <b>당일</b>이면 10월 1일 코트를 10월 1일 0시에 연다는 뜻입니다. 리드가 길수록 미리 계획할 수 있고, 당일 개방인 곳은 자정에 바로 잡아야 합니다.
+  </div>
+
+  <div class="note">
+    <b>추정은 아직 검증 전입니다.</b> 관찰 회차가 1~2회인 코트가 대부분이라, 개방일이 다음 달에 달라질 수 있습니다. 매일 아침 새 공고를 확인해 실제 공고가 올라오면 추정이 확정으로 바뀝니다. <b>상시·장기 접수 15곳</b>(이용기간이 1년 이상인 곳)은 회차라는 게 없어 이 캘린더에 넣지 않았습니다.
+  </div>
+
+  <footer>
+    비공식 도구입니다. 예약은 링크를 눌러 서울시 공공서비스예약에서 직접 진행하세요.<br>
+    데이터 출처: yeyak.seoul.go.kr 공개 목록·상세 페이지
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var DATA = /*__DATA__*/null;
+  if (!DATA) return;
+
+  var EVENTS = DATA.events || [];
+  var PATTERNS = DATA.patterns || [];
+  var DOW = ["일", "월", "화", "수", "목", "금", "토"];
+  var $ = function (id) { return document.getElementById(id); };
+
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+  var cursor = new Date(today.getFullYear(), today.getMonth(), 1);
+
+  function pad(n) { return String(n).padStart(2, "0"); }
+  function dayKey(d) { return d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()); }
+
+  var byDay = {};
+  EVENTS.forEach(function (e) {
+    var key = e.at.slice(0, 10);
+    (byDay[key] = byDay[key] || []).push(e);
+  });
+  Object.keys(byDay).forEach(function (k) {
+    byDay[k].sort(function (a, b) { return a.at.localeCompare(b.at); });
+  });
+
+  /* ── 달력 ─────────────────────────────── */
+  function buildGrid() {
+    var grid = $("grid");
+    grid.innerHTML = "";
+    var year = cursor.getFullYear(), month = cursor.getMonth();
+    $("month-label").textContent = year + "년 " + (month + 1) + "월";
+
+    DOW.forEach(function (name, i) {
+      var head = document.createElement("div");
+      head.className = "dow-head" + (i === 6 ? " sat" : i === 0 ? " sun" : "");
+      head.textContent = name;
+      grid.appendChild(head);
+    });
+
+    var first = new Date(year, month, 1);
+    var start = first.getDay();
+    var days = new Date(year, month + 1, 0).getDate();
+    var prevDays = new Date(year, month, 0).getDate();
+
+    for (var p = start - 1; p >= 0; p--) {
+      grid.appendChild(cell(new Date(year, month - 1, prevDays - p), true));
+    }
+    for (var d = 1; d <= days; d++) {
+      grid.appendChild(cell(new Date(year, month, d), false));
+    }
+    var filled = start + days;
+    var trailing = (7 - (filled % 7)) % 7;
+    for (var t = 1; t <= trailing; t++) {
+      grid.appendChild(cell(new Date(year, month + 1, t), true));
+    }
+  }
+
+  function cell(date, isPad) {
+    var box = document.createElement("div");
+    box.className = "cell" + (isPad ? " pad" : "");
+    if (!isPad && dayKey(date) === dayKey(today)) box.className += " today";
+
+    var num = document.createElement("div");
+    num.className = "dnum";
+    num.textContent = date.getDate();
+    box.appendChild(num);
+
+    var list = byDay[dayKey(date)] || [];
+    list.slice(0, 3).forEach(function (e) {
+      var item = document.createElement("button");
+      item.type = "button";
+      item.className = "ev" + (e.kind === "predicted" ? " pred" : "");
+      item.innerHTML = '<span class="t">' + e.at.slice(11) + "</span> ";
+      item.appendChild(document.createTextNode(e.place.replace("테니스장", "")));
+      item.title = e.place + " (" + e.area + ") " + e.at.slice(11) +
+        (e.kind === "predicted" ? " — 추정" : " — 확정");
+      item.addEventListener("click", function () {
+        if (e.url) window.open(e.url, "_blank", "noopener");
+      });
+      box.appendChild(item);
+    });
+    if (list.length > 3) {
+      var more = document.createElement("div");
+      more.className = "more";
+      more.textContent = "+" + (list.length - 3) + "건";
+      box.appendChild(more);
+    }
+    return box;
+  }
+
+  /* ── 다가오는 개방 ─────────────────────── */
+  function buildNext() {
+    var nowIso = new Date().toISOString().slice(0, 16);
+    var rows = EVENTS.filter(function (e) { return e.at >= nowIso; }).slice(0, 20);
+    var body = $("next-body");
+    body.innerHTML = "";
+
+    rows.forEach(function (e) {
+      var opens = new Date(e.at + ":00");
+      var alarm = new Date(opens.getTime() - 10 * 60000);
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        '<td class="mono">' + e.at.replace("T", " ") + "</td>" +
+        '<td class="mono">' + pad(alarm.getHours()) + ":" + pad(alarm.getMinutes()) + "</td>" +
+        "<td></td>" +
+        '<td><span class="pill ' + cadClass(e.cadence) + '">' + cadLabel(e.cadence) + "</span></td>" +
+        '<td><span class="pill ' + (e.kind === "confirmed" ? "ok" : "guess") + '">' +
+          (e.kind === "confirmed" ? "확정" : "추정 " + e.rounds + "회") + "</span></td>" +
+        "<td></td>";
+      tr.children[2].textContent = e.place + " (" + e.area + ")";
+      if (e.url) {
+        var a = document.createElement("a");
+        a.href = e.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = "예약 →";
+        tr.children[5].appendChild(a);
+      }
+      body.appendChild(tr);
+    });
+  }
+
+  function cadLabel(c) {
+    return { weekly: "주 단위", "half-monthly": "반달", monthly: "월 단위",
+             standing: "상시", unknown: "미상" }[c] || c;
+  }
+  function cadClass(c) {
+    return { weekly: "w", "half-monthly": "h", monthly: "m", standing: "s" }[c] || "s";
+  }
+
+  /* ── 패턴 표 ───────────────────────────── */
+  function buildPatterns() {
+    var order = { weekly: 0, "half-monthly": 1, monthly: 2, standing: 3, unknown: 4 };
+    var rows = PATTERNS.slice().sort(function (a, b) {
+      var d = (order[a.cadence] ?? 9) - (order[b.cadence] ?? 9);
+      if (d) return d;
+      if (b.rounds !== a.rounds) return b.rounds - a.rounds;
+      return a.place.localeCompare(b.place, "ko");
+    });
+
+    var body = $("pat-body");
+    body.innerHTML = "";
+    rows.forEach(function (p) {
+      var lead = p.lead == null ? "—"
+        : p.lead > 0 ? p.lead + "일 전"
+        : p.lead === 0 ? "당일" : p.lead + "일";
+      var tr = document.createElement("tr");
+      tr.innerHTML =
+        "<td></td><td></td>" +
+        '<td><span class="pill ' + cadClass(p.cadence) + '">' + p.label + "</span></td>" +
+        '<td class="mono">' + (p.schedulable ? p.open_days.map(function (d) { return d + "일"; }).join(", ") : "—") + "</td>" +
+        '<td class="mono">' + (p.schedulable ? p.open_time : "—") + "</td>" +
+        '<td class="mono">' + (p.span ? p.span + "일" : "—") + "</td>" +
+        '<td class="mono">' + (p.schedulable ? lead : "—") + "</td>" +
+        '<td class="mono">' + p.rounds + "회</td>";
+      tr.children[0].textContent = p.place;
+      tr.children[1].textContent = p.area;
+      body.appendChild(tr);
+    });
+  }
+
+  /* ── 구독 주소 복사 ────────────────────── */
+  $("copy-btn").addEventListener("click", function () {
+    var url = $("feed-url").textContent.trim();
+    var button = this;
+    function done(ok) {
+      button.textContent = ok ? "복사됨 ✓" : "복사 실패";
+      setTimeout(function () { button.textContent = "주소 복사"; }, 1800);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function () { done(true); },
+                                              function () { done(false); });
+    } else {
+      // 클립보드 API가 막힌 환경에서는 주소를 선택 상태로 만들어 준다
+      var range = document.createRange();
+      range.selectNodeContents($("feed-url"));
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      done(false);
+    }
+  });
+
+  $("prev").addEventListener("click", function () {
+    cursor = new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1); buildGrid();
+  });
+  $("next").addEventListener("click", function () {
+    cursor = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1); buildGrid();
+  });
+  $("today-btn").addEventListener("click", function () {
+    cursor = new Date(today.getFullYear(), today.getMonth(), 1); buildGrid();
+  });
+
+  $("m-ev").textContent = EVENTS.length;
+  $("m-ok").textContent = EVENTS.filter(function (e) { return e.kind === "confirmed"; }).length;
+  $("m-pl").textContent = new Set(EVENTS.map(function (e) { return e.place; })).size;
+
+  buildGrid();
+  buildNext();
+  buildPatterns();
+})();
+</script>
