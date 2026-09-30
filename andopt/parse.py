@@ -8,6 +8,10 @@ from dataclasses import dataclass
 _DF_LINE = re.compile(
     r"^\S+\s+(?P<size>\d+)\s+(?P<used>\d+)\s+(?P<avail>\d+)\s+(?P<pct>\d+)%\s+(?P<mount>\S+)$"
 )
+# 파일시스템 이름이 길 때 다음 줄에 수치가 이어지는 두 줄 형식 (일부 안드로이드 버전)
+_DF_CONT = re.compile(
+    r"^\s+(?P<size>\d+)\s+(?P<used>\d+)\s+(?P<avail>\d+)\s+(?P<pct>\d+)%\s+(?P<mount>\S+)$"
+)
 
 
 @dataclass(frozen=True)
@@ -23,20 +27,36 @@ class Filesystem:
 
 
 def parse_df(output: str) -> list[Filesystem]:
-    """`df -k` 출력을 파싱한다 (1K 블록 단위)."""
+    """`df -k` 출력을 파싱한다 (1K 블록 단위). 두 줄 형식도 처리한다."""
     results = []
+    pending_fs = False  # 직전 줄이 파일시스템 경로만 있는 줄이었으면 True
     for line in output.splitlines():
         match = _DF_LINE.match(line.strip())
-        if not match:
-            continue
-        results.append(
-            Filesystem(
-                mount=match.group("mount"),
-                size_bytes=int(match.group("size")) * 1024,
-                used_bytes=int(match.group("used")) * 1024,
-                avail_bytes=int(match.group("avail")) * 1024,
+        if match:
+            pending_fs = False
+            results.append(
+                Filesystem(
+                    mount=match.group("mount"),
+                    size_bytes=int(match.group("size")) * 1024,
+                    used_bytes=int(match.group("used")) * 1024,
+                    avail_bytes=int(match.group("avail")) * 1024,
+                )
             )
-        )
+            continue
+        cont = _DF_CONT.match(line)
+        if cont and pending_fs:
+            pending_fs = False
+            results.append(
+                Filesystem(
+                    mount=cont.group("mount"),
+                    size_bytes=int(cont.group("size")) * 1024,
+                    used_bytes=int(cont.group("used")) * 1024,
+                    avail_bytes=int(cont.group("avail")) * 1024,
+                )
+            )
+            continue
+        stripped = line.strip()
+        pending_fs = bool(stripped and stripped.startswith("/") and " " not in stripped)
     return results
 
 
