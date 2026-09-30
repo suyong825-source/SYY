@@ -13,7 +13,7 @@ _PROPS = {
     "빌드": "ro.build.display.id",
 }
 
-_INTERESTING_MOUNTS = ("/data", "/storage/emulated", "/system", "/cache")
+_INTERESTING_MOUNTS = ("/data", "/storage/", "/system", "/cache", "/mnt/media_rw/")
 
 
 def device_info(serial: str) -> str:
