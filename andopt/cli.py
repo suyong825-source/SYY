@@ -6,7 +6,8 @@ import argparse
 import sys
 
 from . import __version__, adb
-from .commands import apps, report
+from .commands import apps, dupes, report
+from .format import human_bytes as _human_bytes
 
 
 def _confirm(prompt: str, assume_yes: bool) -> bool:
@@ -48,6 +49,11 @@ def build_parser() -> argparse.ArgumentParser:
 
     enable = sub.add_parser("enable", help="비활성화한 패키지를 되돌림")
     enable.add_argument("packages", nargs="+")
+
+    dupe = sub.add_parser("dupes", help="중복 파일 탐지 (--delete 로 삭제)")
+    dupe.add_argument("--delete", action="store_true", help="중복 파일을 실제로 삭제")
+    dupe.add_argument("--path", default="/storage/emulated/0", metavar="경로",
+                      help="스캔할 경로 (기본: /storage/emulated/0)")
 
     return parser
 
@@ -93,6 +99,20 @@ def _dispatch(args: argparse.Namespace) -> str:
         return apps.disable_packages(serial, args.packages)
     if args.command == "enable":
         return apps.enable_packages(serial, args.packages)
+    if args.command == "dupes":
+        groups = dupes.find_dupes(serial, root=args.path)
+        if not groups:
+            return "중복 파일이 없습니다."
+        print(dupes.show_dupes(groups))
+        if not args.delete:
+            return "\n삭제하려면: andopt dupes --delete"
+        total_waste = sum(g.waste_bytes for g in groups)
+        if not _confirm(
+            f"중복 파일 {sum(len(g.duplicates()) for g in groups)}개 ({_human_bytes(total_waste)})를 삭제할까요?",
+            args.yes,
+        ):
+            return "취소했습니다."
+        return dupes.delete_dupes(serial, groups)
 
     raise AssertionError(f"처리되지 않은 명령: {args.command}")
 
