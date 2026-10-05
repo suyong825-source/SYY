@@ -12,13 +12,19 @@ dependencies = []
 
 [project.optional-dependencies]
 dev = ["pytest>=7"]
+flightcal = [
+    "google-auth-oauthlib>=1.2",
+    "google-api-python-client>=2.140",
+    "airportsdata>=20231110",
+]
 
 [project.scripts]
 andopt = "andopt.cli:main"
 courtfinder = "courtfinder.cli:main"
+flightcal = "flightcal.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["andopt*", "courtfinder*"]
+include = ["andopt*", "courtfinder*", "flightcal*"]
 
 [tool.setuptools.package-data]
 courtfinder = ["template.html"]

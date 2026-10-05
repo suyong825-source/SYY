@@ -28,6 +28,20 @@ def test_parse_df_used_ratio_is_zero_for_empty_filesystem():
     assert fs.used_ratio == 0.0
 
 
+def test_parse_df_handles_two_line_format():
+    output = (
+        "Filesystem               1K-blocks    Used Available Use% Mounted on\n"
+        "/dev/block/bootdevice/by-name/userdata\n"
+        "                        113246208 89104384  24141824  79% /data\n"
+        "/dev/block/sda12   3002368  2957312     45056  99% /system\n"
+    )
+    filesystems = parse.parse_df(output)
+    mounts = [fs.mount for fs in filesystems]
+    assert mounts == ["/data", "/system"]
+    assert filesystems[0].size_bytes == 113246208 * 1024
+    assert filesystems[0].used_bytes == 89104384 * 1024
+
+
 def test_parse_packages_dedupes_and_sorts():
     output = "package:com.b\npackage:com.a\npackage:com.a\n\ngarbage\n"
     assert parse.parse_packages(output) == ["com.a", "com.b"]
